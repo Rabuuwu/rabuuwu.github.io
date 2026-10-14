@@ -492,55 +492,76 @@ h1 {
   padding:4px 9px;
   color:var(--muted)
 }
+/* Keep the entire waveform inside the rounded visual, including its tallest bars. */
 .ai-case .case-visual {
-  background:var(--soft);
-  display:flex;
-  flex-direction:column;
-  gap:32px
+  background: var(--soft);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding: 26px 22px;
 }
 .call-wave {
-  height:60px;
-  display:flex;
-  align-items:center;
-  gap:7px
+  height: 70px;
+  flex: 0 0 70px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
 }
 .call-wave i {
-  width:6px;
-  height:20px;
-  background:var(--accent);
-  border-radius:8px
+  width: 6px;
+  height: 20px;
+  background: var(--accent);
+  border-radius: 8px;
 }
-.call-wave i:nth-child(3n) {
-  height:55px
-}
-.call-wave i:nth-child(2n) {
-  height:36px
-}
-.call-wave i:nth-child(5n) {
-  height:70px
-}
+.call-wave i:nth-child(3n) { height: 55px; }
+.call-wave i:nth-child(2n) { height: 36px; }
+.call-wave i:nth-child(5n) { height: 70px; }
 .call-result {
-  text-align:center
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 12px;
+  width: 100%;
+  text-align: center;
 }
-.call-result>span {
-  font-size:11px;
-  color:var(--muted)
+.call-result > span {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--muted);
 }
-.call-result strong {
-  display:block;
-  font-size:34px;
-  letter-spacing:-.05em;
-  line-height:1.7
+.call-result .call-comparison {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 12px;
+  font-size: 44px;
+  font-weight: 800;
+  letter-spacing: -.045em;
+  line-height: 1.15;
+  white-space: nowrap;
 }
 .call-result s {
-  font-size:23px;
-  color:var(--muted);
-  font-weight:400;
-  margin-right:12px
+  font-size: 20px;
+  color: var(--muted);
+  font-weight: 400;
+  letter-spacing: -.025em;
+  text-decoration-thickness: 1px;
+}
+.call-result .call-arrow {
+  font-size: 23px;
+  font-weight: 400;
+  color: var(--muted);
+  letter-spacing: 0;
 }
 .call-result small {
-  color:var(--muted);
-  font-size:10px
+  max-width: 40ch;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
 }
 .personal-projects {
   margin-top:66px;

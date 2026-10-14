@@ -37,8 +37,8 @@
       "pl": "Odpowiadałem za dostęp do nagrań, wykorzystałem faster-whisper, zbudowałem API, dostroiłem lokalny model i wyświetlanie podsumowań w CRM. Porównanie czasów jest szacunkiem."
     },
     "localModel": {
-      "en": "Estimate from average times.",
-      "pl": "Szacunek z porównania średnich czasów."
+      "en": "Estimated values based on a comparison of average times",
+      "pl": "Wartości szacunkowe na podstawie porównania średnich czasów"
     },
     "dndBody": {
       "en": "I started with the paper character sheets and notebooks we used during RPG sessions. The app brings characters, equipment, notes and campaigns together.",
@@ -147,6 +147,14 @@
     "fsBody": {
       "en": "An educational-content system with article and course creation, resource management, an Express API and PostgreSQL. I present it as an experiment; the planned ML and automated-test features are not implemented.",
       "pl": "System treści edukacyjnych z tworzeniem artykułów i kursów, zarządzaniem zasobami, API Express i PostgreSQL. Pokazuję go jako eksperyment; planowane ML i automatyczne testy nie są zaimplementowane."
+    },
+    "callDocumentation": {
+      "en": "Call documentation time",
+      "pl": "Czas dokumentowania rozmowy"
+    },
+    "callSeconds": {
+      "en": "~15 s",
+      "pl": "~15 s"
     }
   },
   "cases": [
