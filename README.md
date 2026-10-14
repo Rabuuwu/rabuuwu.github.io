@@ -64,14 +64,14 @@ The default Chrome executable is the macOS application path. For Linux:
 
 ```sh
 CHROME_PATH=/usr/bin/google-chrome python3 tests/browser_check.py
-python3 tests/case_studies_check.py
+CHROME_PATH=/usr/bin/google-chrome python3 tests/case_studies_check.py
 ```
 
 To verify a deployed version:
 
 ```sh
 PORTFOLIO_URL=https://rabuuwu.github.io python3 tests/browser_check.py
-python3 tests/case_studies_check.py
+PORTFOLIO_URL=https://rabuuwu.github.io python3 tests/case_studies_check.py
 ```
 
 Checks cover Polish and English, an unsupported-language fallback, system theme selection, manual preference persistence, restricted local storage, CV selection/preview, Escape and focus restoration, keyboard navigation, required resources and no horizontal overflow at 320, 390, 768 and 1440 px. Screenshots go to ignored `tests/screenshots/`. The JavaScript-disabled case checks content and CV fallback links.
