@@ -1,0 +1,6 @@
+.vibeskills/
+outputs/
+.DS_Store
+__pycache__/
+.venv/
+tests/screenshots/
