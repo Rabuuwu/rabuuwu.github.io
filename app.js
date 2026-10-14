@@ -1,5 +1,7 @@
 'use strict';
 (() => {
+  document.documentElement.classList.add('js');
+  const pageContent = JSON.parse(document.getElementById('page-translations')?.textContent || '{}');
   const en = Object.fromEntries([...document.querySelectorAll('[data-i18n]')].map(el => [el.dataset.i18n, el.innerHTML]));
   const translations = {
     en,
@@ -24,7 +26,8 @@
       contactIntro: 'Masz projekt lub propozycję współpracy?', contactTitle: 'Stwórzmy razem<br>coś przydatnego.', contactLocation: 'Tychy, Polska. Angielski: C1.', backTop: 'Na początek ↑', close: 'Zamknij', openPdf: 'Otwórz PDF w nowej karcie'
     }
   };
-  const aria = { en: { navigation: 'Main navigation', systemAlt: 'Connected interface, API, CRM database and local AI modules' }, pl: { navigation: 'Nawigacja główna', systemAlt: 'Połączone moduły interfejsu, API, bazy CRM i lokalnego AI' } };
+  Object.entries(pageContent.strings || {}).forEach(([key, value]) => { translations.en[key] = value.en; translations.pl[key] = value.pl; });
+  const aria = { en: { navigation: 'Main navigation', flow: 'System flow', systemAlt: 'Connected interface, API, CRM database and local AI modules' }, pl: { navigation: 'Nawigacja główna', flow: 'Przepływ systemu', systemAlt: 'Połączone moduły interfejsu, API, bazy CRM i lokalnego AI' } };
   function read(key) { try { return localStorage.getItem(key); } catch { return null; } }
   function save(key, value) { try { localStorage.setItem(key, value); } catch { /* Preferences still work without storage. */ } }
   let language = read('portfolio-language');
@@ -33,7 +36,7 @@
   const themeButton = document.getElementById('theme');
   const frame = document.getElementById('cv-frame');
   const dialog = document.getElementById('cv-dialog');
-  const pdf = () => `assets/CV_Adam_Bielas_${language.toUpperCase()}.pdf`;
+  const pdf = () => `${document.body.dataset.assets || 'assets/'}CV_Adam_Bielas_${language.toUpperCase()}.pdf`;
   function updateThemeButton() {
     const dark = document.documentElement.dataset.theme === 'dark';
     themeButton.setAttribute('aria-label', language === 'pl' ? `Włącz ${dark ? 'jasny' : 'ciemny'} motyw` : `Switch to ${dark ? 'light' : 'dark'} mode`);
@@ -44,6 +47,7 @@
   function renderLanguage() {
     document.documentElement.lang = language;
     document.querySelectorAll('[data-i18n]').forEach(el => { el.innerHTML = translations[language][el.dataset.i18n] ?? en[el.dataset.i18n]; });
+    document.querySelectorAll('[data-i18n-alt]').forEach(el => el.alt = translations[language][el.dataset.i18nAlt] || translations.en[el.dataset.i18nAlt]);
     document.querySelectorAll('[data-i18n-aria]').forEach(el => el.setAttribute('aria-label', aria[language][el.dataset.i18nAria]));
     langButton.textContent = language === 'pl' ? 'EN' : 'PL';
     langButton.setAttribute('aria-label', language === 'pl' ? 'Zmień język na angielski' : 'Change language to Polish');
@@ -51,7 +55,13 @@
     document.getElementById('cv-open').href = pdf();
     frame.title = language === 'pl' ? 'CV Adama Bielasa' : 'Adam Bielas CV';
     if (dialog.open) frame.src = pdf();
-    document.querySelector('meta[name="description"]').content = language === 'pl' ? 'Adam Bielas — programista Full Stack. Aplikacje webowe i mobilne, integracje CRM i lokalne AI. Tychy, Polska.' : 'Adam Bielas — Full Stack Developer. Web, mobile, CRM integrations and local AI. Based in Tychy, Poland.';
+    const meta = pageContent.meta?.[language];
+    if (meta) {
+      document.title = meta.title;
+      document.querySelector('meta[name="description"]').content = meta.description;
+      document.querySelector('meta[property="og:title"]').content = meta.title;
+      document.querySelector('meta[property="og:description"]').content = meta.description;
+    }
     updateThemeButton();
   }
   langButton.addEventListener('click', () => { language = language === 'pl' ? 'en' : 'pl'; save('portfolio-language', language); renderLanguage(); });
@@ -60,6 +70,19 @@
   document.getElementById('cv-preview').addEventListener('click', () => { frame.src = pdf(); dialog.showModal(); });
   document.getElementById('cv-close').addEventListener('click', () => dialog.close());
   dialog.addEventListener('click', event => { const box = dialog.getBoundingClientRect(); if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) dialog.close(); });
+  const menuButton = document.getElementById('menu-toggle');
+  const siteNav = document.getElementById('site-nav');
+  function setMenu(open) {
+    menuButton.setAttribute('aria-expanded', String(open));
+    document.querySelector('.header').dataset.menuOpen = String(open);
+  }
+  menuButton.addEventListener('click', () => setMenu(menuButton.getAttribute('aria-expanded') !== 'true'));
+  siteNav.addEventListener('click', event => { if (event.target.closest('a')) setMenu(false); });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
+      setMenu(false); menuButton.focus();
+    }
+  });
   document.getElementById('year').textContent = new Date().getFullYear();
   renderLanguage();
 })();

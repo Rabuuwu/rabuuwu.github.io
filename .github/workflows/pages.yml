@@ -18,6 +18,10 @@ jobs:
           python-version: '3.12'
       - name: Install browser test dependencies
         run: python -m pip install -r tests/requirements.txt
+      - name: Check generated pages
+        run: |
+          python scripts/build_portfolio.py
+          git diff --exit-code -- index.html projects
       - name: Check portfolio in Chrome
         env:
           CHROME_PATH: /usr/bin/google-chrome
@@ -30,11 +34,13 @@ jobs:
             sleep 1
           done
           python tests/browser_check.py
+          python tests/case_studies_check.py
       - name: Package public files
         run: |
           mkdir -p /tmp/portfolio-site
           cp index.html style.css app.js .nojekyll /tmp/portfolio-site/
           cp -R assets /tmp/portfolio-site/assets
+          cp -R projects /tmp/portfolio-site/projects
       - uses: actions/upload-pages-artifact@v3
         with:
           path: /tmp/portfolio-site

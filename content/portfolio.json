@@ -1,0 +1,1268 @@
+{
+  "home": {
+    "headline": {
+      "en": "I build applications,<br>integrations and CRM modules.",
+      "pl": "Rozwijam aplikacje,<br>integracje i moduły CRM."
+    },
+    "intro": {
+      "en": "I work with Node.js, TypeScript, React and PostgreSQL. At an internet and TV provider, I connect software with the processes, devices and people it serves.",
+      "pl": "Pracuję z Node.js, TypeScript, React i PostgreSQL. U operatora internetu i telewizji łączę oprogramowanie z procesami, urządzeniami i ludźmi, którym ma służyć."
+    },
+    "workTitle": {
+      "en": "My commercial work<br>and personal projects.",
+      "pl": "Moje realizacje<br>i projekty własne."
+    },
+    "workIntro": {
+      "en": "I explain the problem, my responsibilities and the current status in each case study.",
+      "pl": "W opisach pokazuję problem, mój zakres odpowiedzialności i aktualny status rozwiązania."
+    },
+    "inventoryMetric": {
+      "en": "estimated time reduction",
+      "pl": "szacunkowo krótszy czas"
+    },
+    "inventoryTitle": {
+      "en": "I replaced a paper inventory workflow.",
+      "pl": "Zastąpiłem papierowy obieg magazynowy."
+    },
+    "inventoryBody": {
+      "en": "I built the SQL data model, device history, customer address links and document generation. The ~90% improvement is an estimate from comparing average task times.",
+      "pl": "Zbudowałem model SQL, historię urządzeń, powiązania z adresami klientów i generowanie dokumentów. Wynik ~90% to szacunek z porównania średnich czasów zadań."
+    },
+    "aiTitle": {
+      "en": "I integrated local AI with the CRM.",
+      "pl": "Zintegrowałem lokalne AI z CRM."
+    },
+    "aiBody": {
+      "en": "I handled access to recordings, used faster-whisper for transcription, built the API, fine-tuned the local model and displayed summaries in the CRM. The time comparison is an estimate.",
+      "pl": "Odpowiadałem za dostęp do nagrań, wykorzystałem faster-whisper, zbudowałem API, dostroiłem lokalny model i wyświetlanie podsumowań w CRM. Porównanie czasów jest szacunkiem."
+    },
+    "localModel": {
+      "en": "Estimate from average times.",
+      "pl": "Szacunek z porównania średnich czasów."
+    },
+    "dndBody": {
+      "en": "I started with the paper character sheets and notebooks we used during RPG sessions. The app brings characters, equipment, notes and campaigns together.",
+      "pl": "Zacząłem od papierowych kart i zeszytów używanych podczas sesji RPG. Aplikacja zbiera postacie, ekwipunek, notatki i kampanie w jednym miejscu."
+    },
+    "personal": {
+      "en": "Personal project / in development",
+      "pl": "Projekt własny / rozwijany"
+    },
+    "commercial": {
+      "en": "Commercial work / in use at NDI",
+      "pl": "Praca komercyjna / używane w NDI"
+    },
+    "aboutTitle": {
+      "en": "I work with software<br>and ISP networks.",
+      "pl": "Pracuję z oprogramowaniem<br>i telekomunikacją."
+    },
+    "aboutLead": {
+      "en": "I'm a Full Stack Developer from Tychy. At NDI, an internet and TV provider, I develop and administer a production CRM: modules, databases, APIs and interfaces.",
+      "pl": "Jestem programistą Full Stack z Tychów. W NDI, u operatora internetu i telewizji, rozwijam i administruję produkcyjnym CRM: modułami, bazami danych, API i interfejsami."
+    },
+    "aboutBody": {
+      "en": "My work starts with a business need and continues through data and UI design, implementation, manual verification, deployment and maintenance. I also diagnose problems and support the people using the system.",
+      "pl": "Zaczynam od potrzeby biznesowej, a potem projektuję dane i UI, implementuję rozwiązanie, weryfikuję je manualnie, wdrażam i utrzymuję. Diagnozuję też problemy i wspieram użytkowników systemu."
+    },
+    "aboutMore": {
+      "en": "Before becoming a Software Developer in 2025, I worked as a telecommunications installer while already taking on software tasks. That experience helps me connect an application with devices, customer addresses and everyday work in an ISP.",
+      "pl": "Przed objęciem stanowiska programisty w 2025 r. pracowałem jako monter, już wtedy wykonując zadania programistyczne. To doświadczenie pomaga mi łączyć aplikację z urządzeniami, adresami klientów i codzienną pracą operatora ISP."
+    },
+    "contactIntro": {
+      "en": "A development task, integration or website?",
+      "pl": "Aplikacja, integracja lub strona internetowa?"
+    },
+    "contactTitle": {
+      "en": "Let's discuss<br>working together.",
+      "pl": "Porozmawiajmy<br>o współpracy."
+    },
+    "contactLocation": {
+      "en": "Tychy, Poland. Contact me to discuss scope and collaboration.",
+      "pl": "Tychy, Polska. Napisz, żeby ustalić zakres i formę współpracy."
+    },
+    "experienceTitle": {
+      "en": "My professional path",
+      "pl": "Moja droga zawodowa"
+    },
+    "experienceIntro": {
+      "en": "Software development became part of my work before it became my job title.",
+      "pl": "Rozwój oprogramowania był częścią mojej pracy, zanim stał się nazwą stanowiska."
+    },
+    "competenciesTitle": {
+      "en": "Where I use my skills",
+      "pl": "Gdzie wykorzystuję kompetencje"
+    },
+    "competenciesIntro": {
+      "en": "Technologies with examples of what I use them for.",
+      "pl": "Technologie wraz z przykładami ich zastosowania."
+    },
+    "approachTitle": {
+      "en": "How I work",
+      "pl": "Jak pracuję"
+    },
+    "approachIntro": {
+      "en": "I take responsibility for a solution beyond writing the code.",
+      "pl": "Moja odpowiedzialność za rozwiązanie nie kończy się na napisaniu kodu."
+    },
+    "personalTitle": {
+      "en": "Outside my day-to-day work",
+      "pl": "Poza codzienną pracą"
+    },
+    "personalBody": {
+      "en": "I play RPGs with friends. Paper character sheets and notebooks led me to build D&D Companion. I also develop my own applications and explore local AI and automation through practical tools.",
+      "pl": "Gram ze znajomymi w RPG. Papierowe karty i zeszyty były impulsem do stworzenia D&D Companion. Rozwijam też własne aplikacje, a lokalne AI i automatyzację poznaję przez budowanie praktycznych narzędzi."
+    },
+    "offerTitle": {
+      "en": "What I can help with",
+      "pl": "W czym mogę pomóc"
+    },
+    "offerBody": {
+      "en": "I build websites as part of my business activity. I can also help with web applications, CRM modules, API integrations, process automation, interface design and practical local-AI integrations. I start by discussing the problem and scope.",
+      "pl": "Tworzę strony internetowe w ramach działalności. Mogę też pomóc przy aplikacjach webowych, modułach CRM, integracjach API, automatyzacji procesów, projektowaniu interfejsów i praktycznych integracjach lokalnego AI. Zaczynam od rozmowy o problemie i zakresie."
+    },
+    "education": {
+      "en": "2019–2023 / IT Technician, Technical Secondary School No. 3 in Tychy.",
+      "pl": "2019–2023 / Technik informatyk, Technikum nr 3 w Tychach."
+    },
+    "ksefShortTitle": {
+      "en": "I deployed a KSeF integration.",
+      "pl": "Wdrożyłem integrację z KSeF."
+    },
+    "ksefShortBody": {
+      "en": "I designed, tested and deployed the connection with the CRM, and maintain it in production.",
+      "pl": "Zaprojektowałem, przetestowałem i wdrożyłem połączenie z CRM. Odpowiadam za jego utrzymanie w produkcji."
+    },
+    "mobileShortTitle": {
+      "en": "I built a customer request app.",
+      "pl": "Zbudowałem aplikację do zgłoszeń."
+    },
+    "mobileShortBody": {
+      "en": "React Native, TypeScript and Expo with an Express backend and CRM integration. The application is a test version.",
+      "pl": "React Native, TypeScript i Expo, backend Express oraz integracja z CRM. Aplikacja jest wersją testową."
+    },
+    "fsTitle": {
+      "en": "Another experiment: FSE-IT",
+      "pl": "Inny eksperyment: FSE-IT"
+    },
+    "fsBody": {
+      "en": "An educational-content system with article and course creation, resource management, an Express API and PostgreSQL. I present it as an experiment; the planned ML and automated-test features are not implemented.",
+      "pl": "System treści edukacyjnych z tworzeniem artykułów i kursów, zarządzaniem zasobami, API Express i PostgreSQL. Pokazuję go jako eksperyment; planowane ML i automatyczne testy nie są zaimplementowane."
+    }
+  },
+  "cases": [
+    {
+      "slug": "crm-inventory",
+      "title": {
+        "en": "I replaced a paper inventory workflow.",
+        "pl": "Zastąpiłem papierowy obieg magazynowy."
+      },
+      "summary": {
+        "en": "A CRM module linking devices, their history, customer addresses and generated documents.",
+        "pl": "Moduł CRM łączący urządzenia, ich historię, adresy klientów i generowane dokumenty."
+      },
+      "status": {
+        "en": "Deployed and maintained",
+        "pl": "Wdrożone i utrzymywane"
+      },
+      "kind": {
+        "en": "Commercial work / NDI",
+        "pl": "Realizacja komercyjna / NDI"
+      },
+      "tech": [
+        "PostgreSQL",
+        "SQL",
+        "CRM"
+      ],
+      "sections": [
+        {
+          "id": "context",
+          "title": {
+            "en": "The problem and users",
+            "pl": "Problem i użytkownicy"
+          },
+          "paragraphs": [
+            {
+              "en": "Inventory information was handled on paper. I built a module in the existing CRM to connect that workflow with device records and customer addresses. The solution is used across the company.",
+              "pl": "Informacje magazynowe były obsługiwane na papierze. Zbudowałem moduł w istniejącym CRM, żeby połączyć ten proces z ewidencją urządzeń i adresami klientów. Z rozwiązania korzysta cała firma."
+            }
+          ],
+          "bullets": []
+        },
+        {
+          "id": "role",
+          "title": {
+            "en": "What I was responsible for",
+            "pl": "Za co odpowiadałem"
+          },
+          "paragraphs": [
+            {
+              "en": "I designed the SQL data model, implemented device history and links to customer addresses, and added automatic document generation. I tested and deployed the module and continue to maintain it.",
+              "pl": "Zaprojektowałem model danych SQL, zaimplementowałem historię urządzeń i powiązania z adresami klientów oraz automatyczne generowanie dokumentów. Przetestowałem i wdrożyłem moduł, a następnie zająłem się jego utrzymaniem."
+            }
+          ],
+          "bullets": []
+        },
+        {
+          "id": "features",
+          "title": {
+            "en": "What the module does",
+            "pl": "Co robi moduł"
+          },
+          "paragraphs": [],
+          "bullets": [
+            {
+              "en": "Records devices and their history in the CRM.",
+              "pl": "Ewidencjonuje urządzenia i ich historię w CRM."
+            },
+            {
+              "en": "Links devices to customer addresses.",
+              "pl": "Łączy urządzenia z adresami klientów."
+            },
+            {
+              "en": "Generates documents from stored information.",
+              "pl": "Generuje dokumenty na podstawie zapisanych informacji."
+            },
+            {
+              "en": "Replaces a paper-based inventory workflow.",
+              "pl": "Zastępuje papierowy obieg magazynowy."
+            }
+          ]
+        },
+        {
+          "id": "data",
+          "title": {
+            "en": "How I connected the data",
+            "pl": "Jak połączyłem dane"
+          },
+          "paragraphs": [
+            {
+              "en": "I use SQL relationships to keep device records, history and address links together. The model makes the context of a device available in the same system used for customer operations.",
+              "pl": "Wykorzystuję relacje SQL, żeby powiązać ewidencję urządzeń, historię i adresy. Dzięki temu kontekst urządzenia jest dostępny w tym samym systemie, który obsługuje pracę z klientami."
+            },
+            {
+              "en": "Document generation uses those stored records. The application therefore supports both inventory information and the documents needed around the process.",
+              "pl": "Generowanie dokumentów korzysta z zapisanych danych. Aplikacja obsługuje więc zarówno informacje magazynowe, jak i dokumentację związaną z procesem."
+            }
+          ],
+          "bullets": []
+        },
+        {
+          "id": "result",
+          "title": {
+            "en": "Result and measurement",
+            "pl": "Rezultat i sposób porównania"
+          },
+          "paragraphs": [
+            {
+              "en": "I estimate that inventory work takes about 90% less time than the previous paper workflow. This is based on a comparison of average task times; it is an estimate, not a controlled benchmark.",
+              "pl": "Szacuję, że praca związana z inwentaryzacją zajmuje około 90% mniej czasu niż przy wcześniejszym obiegu papierowym. Wynik opiera się na porównaniu średnich czasów zadań; jest szacunkiem, nie kontrolowanym benchmarkiem."
+            }
+          ],
+          "bullets": []
+        },
+        {
+          "id": "status",
+          "title": {
+            "en": "Current status",
+            "pl": "Aktualny status"
+          },
+          "paragraphs": [
+            {
+              "en": "The module is deployed and I maintain it as part of my CRM responsibilities at NDI.",
+              "pl": "Moduł jest wdrożony i utrzymuję go w ramach odpowiedzialności za CRM w NDI."
+            }
+          ],
+          "bullets": []
+        }
+      ],
+      "repo": null,
+      "diagram": [
+        {
+          "en": "Device records",
+          "pl": "Ewidencja urządzeń"
+        },
+        {
+          "en": "History and addresses",
+          "pl": "Historia i adresy"
+        },
+        {
+          "en": "Documents",
+          "pl": "Dokumenty"
+        }
+      ],
+      "screenshot": null
+    },
+    {
+      "slug": "ai-call-summaries",
+      "title": {
+        "en": "I connected call summaries with the CRM.",
+        "pl": "Połączyłem podsumowania rozmów z CRM."
+      },
+      "summary": {
+        "en": "Recording access, faster-whisper transcription, a local LLM and a CRM integration.",
+        "pl": "Dostęp do nagrań, transkrypcja faster-whisper, lokalny LLM i integracja z CRM."
+      },
+      "status": {
+        "en": "In use across the company",
+        "pl": "Używane w całej firmie"
+      },
+      "kind": {
+        "en": "Commercial work / NDI",
+        "pl": "Realizacja komercyjna / NDI"
+      },
+      "tech": [
+        "faster-whisper",
+        "Local LLM",
+        "Fine-tuning",
+        "JSON API"
+      ],
+      "sections": [
+        {
+          "id": "context",
+          "title": {
+            "en": "The problem and users",
+            "pl": "Problem i użytkownicy"
+          },
+          "paragraphs": [
+            {
+              "en": "Documenting a call required time after the conversation. I worked on turning recordings into text and summaries that staff can read inside the CRM. The solution is used across the company.",
+              "pl": "Dokumentowanie rozmowy wymagało czasu po jej zakończeniu. Zająłem się zamianą nagrań w tekst i podsumowania, które pracownicy mogą odczytać w CRM. Z rozwiązania korzysta cała firma."
+            }
+          ],
+          "bullets": []
+        },
+        {
+          "id": "role",
+          "title": {
+            "en": "My responsibility, step by step",
+            "pl": "Mój zakres, krok po kroku"
+          },
+          "paragraphs": [],
+          "bullets": [
+            {
+              "en": "I handled access to the call recordings.",
+              "pl": "Odpowiadałem za dostęp do nagrań rozmów."
+            },
+            {
+              "en": "I used faster-whisper for transcription; I did not write the transcription model.",
+              "pl": "Do transkrypcji wykorzystałem faster-whisper; nie tworzyłem modelu transkrypcji."
+            },
+            {
+              "en": "I built the integration API myself.",
+              "pl": "Samodzielnie zbudowałem API integracji."
+            },
+            {
+              "en": "I fine-tuned the local language model.",
+              "pl": "Samodzielnie przeprowadziłem fine-tuning lokalnego modelu językowego."
+            },
+            {
+              "en": "The local LLM generated summaries.",
+              "pl": "Podsumowania generował lokalny LLM."
+            },
+            {
+              "en": "I implemented the display of summaries in the CRM.",
+              "pl": "Zaimplementowałem wyświetlanie podsumowań w CRM."
+            }
+          ]
+        },
+        {
+          "id": "flow",
+          "title": {
+            "en": "How the pieces connect",
+            "pl": "Jak łączą się elementy"
+          },
+          "paragraphs": [
+            {
+              "en": "The workflow separates transcription, summarisation and the CRM interface. faster-whisper produces the transcript, a local LLM generates the summary, and my API connects the output with the CRM.",
+              "pl": "Proces rozdziela transkrypcję, podsumowanie i interfejs CRM. faster-whisper tworzy transkrypcję, lokalny LLM generuje podsumowanie, a moje API łączy wynik z CRM."
+            },
+            {
+              "en": "The integration uses JSON endpoints with token-based authentication. My work included both the connection between systems and the presentation of the results to staff.",
+              "pl": "Integracja korzysta z endpointów JSON z uwierzytelnianiem tokenowym. Moja praca obejmowała zarówno połączenie systemów, jak i prezentację wyników pracownikom."
+            }
+          ],
+          "bullets": []
+        },
+        {
+          "id": "model",
+          "title": {
+            "en": "Working with the local model",
+            "pl": "Praca z lokalnym modelem"
+          },
+          "paragraphs": [
+            {
+              "en": "I fine-tuned the local LLM and integrated its generated summaries with the CRM. This is practical work with an existing model and its output, rather than a claim that I built a language model from scratch.",
+              "pl": "Dostroiłem lokalny LLM i zintegrowałem generowane przez niego podsumowania z CRM. To praktyczna praca z istniejącym modelem i jego wynikami, a nie tworzenie modelu językowego od podstaw."
+            }
+          ],
+          "bullets": []
+        },
+        {
+          "id": "result",
+          "title": {
+            "en": "Result and measurement",
+            "pl": "Rezultat i sposób porównania"
+          },
+          "paragraphs": [
+            {
+              "en": "I estimate that call documentation went from about 3 minutes to about 15 seconds. I derived the estimate by comparing average times. It describes documentation time, not the duration of the entire transcription and inference pipeline.",
+              "pl": "Szacuję, że czas dokumentowania rozmowy skrócił się z około 3 minut do około 15 sekund. Oszacowanie wynika z porównania średnich czasów. Dotyczy dokumentowania rozmowy, nie czasu całej transkrypcji i inferencji."
+            }
+          ],
+          "bullets": []
+        },
+        {
+          "id": "status",
+          "title": {
+            "en": "Use and publication boundary",
+            "pl": "Użycie i granice opisu"
+          },
+          "paragraphs": [
+            {
+              "en": "The solution is used across the company. This case study describes my work and the system flow without publishing recordings, customer data or company code.",
+              "pl": "Rozwiązanie jest używane w całej firmie. W opisie pokazuję swoją pracę i przepływ systemu, bez publikowania nagrań, danych klientów ani kodu firmowego."
+            }
+          ],
+          "bullets": []
+        }
+      ],
+      "repo": null,
+      "diagram": [
+        {
+          "en": "Recording",
+          "pl": "Nagranie"
+        },
+        {
+          "en": "faster-whisper transcript",
+          "pl": "Transkrypcja faster-whisper"
+        },
+        {
+          "en": "Local LLM summary",
+          "pl": "Podsumowanie LLM"
+        },
+        {
+          "en": "API and CRM",
+          "pl": "API i CRM"
+        }
+      ],
+      "screenshot": null
+    },
+    {
+      "slug": "ksef",
+      "title": {
+        "en": "I deployed and maintain a KSeF integration.",
+        "pl": "Wdrożyłem i utrzymuję integrację z KSeF."
+      },
+      "summary": {
+        "en": "A commercial integration connected with the production CRM at NDI.",
+        "pl": "Integracja komercyjna połączona z produkcyjnym CRM w NDI."
+      },
+      "status": {
+        "en": "Deployed in production",
+        "pl": "Wdrożone produkcyjnie"
+      },
+      "kind": {
+        "en": "Commercial work / NDI",
+        "pl": "Realizacja komercyjna / NDI"
+      },
+      "tech": [
+        "KSeF",
+        "CRM",
+        "Integration"
+      ],
+      "sections": [
+        {
+          "id": "context",
+          "title": {
+            "en": "Context and users",
+            "pl": "Kontekst i użytkownicy"
+          },
+          "paragraphs": [
+            {
+              "en": "At NDI I work with a CRM that supports the operator’s everyday processes. The KSeF integration is part of that environment and is used within the company.",
+              "pl": "W NDI pracuję z CRM obsługującym codzienne procesy operatora. Integracja z KSeF jest częścią tego środowiska i jest wykorzystywana wewnątrz firmy."
+            }
+          ],
+          "bullets": []
+        },
+        {
+          "id": "role",
+          "title": {
+            "en": "My responsibility",
+            "pl": "Mój zakres odpowiedzialności"
+          },
+          "paragraphs": [
+            {
+              "en": "I designed the integration, tested it, deployed it and took responsibility for maintaining it in production. My involvement covers implementation and its continued operation, not only preparing an initial connection.",
+              "pl": "Zaprojektowałem integrację, przetestowałem ją, wdrożyłem i przejąłem odpowiedzialność za utrzymanie w produkcji. Mój zakres obejmuje implementację oraz dalsze działanie, nie tylko przygotowanie pierwszego połączenia."
+            }
+          ],
+          "bullets": []
+        },
+        {
+          "id": "integration",
+          "title": {
+            "en": "The integration boundary",
+            "pl": "Zakres integracji"
+          },
+          "paragraphs": [
+            {
+              "en": "I connected the CRM with KSeF. The work sits alongside other CRM integrations I have implemented, such as electronic signatures and an interactive address and coverage map.",
+              "pl": "Połączyłem CRM z KSeF. Ta praca jest częścią moich integracji CRM, obok podpisów elektronicznych oraz interaktywnej mapy adresów i zasięgu."
+            },
+            {
+              "en": "This case study focuses on the verified scope of my work. It does not expose document contents, internal endpoints or the company’s source code.",
+              "pl": "W case study opisuję potwierdzony zakres swojej pracy. Nie publikuję zawartości dokumentów, wewnętrznych endpointów ani kodu firmy."
+            }
+          ],
+          "bullets": []
+        },
+        {
+          "id": "verification",
+          "title": {
+            "en": "Testing and deployment",
+            "pl": "Testowanie i wdrożenie"
+          },
+          "paragraphs": [
+            {
+              "en": "I tested the integration before deploying it. Testing changes in a test environment and maintaining the production CRM are part of my everyday responsibilities.",
+              "pl": "Przetestowałem integrację przed wdrożeniem. Sprawdzanie zmian w środowisku testowym oraz utrzymanie produkcyjnego CRM są częścią moich codziennych obowiązków."
+            }
+          ],
+          "bullets": []
+        },
+        {
+          "id": "result",
+          "title": {
+            "en": "Result",
+            "pl": "Rezultat"
+          },
+          "paragraphs": [
+            {
+              "en": "The integration was deployed and I maintain it in production. I describe that delivered scope without attaching an unmeasured time-saving or financial result.",
+              "pl": "Integracja została wdrożona i utrzymuję ją w produkcji. Pokazuję ten zrealizowany zakres bez przypisywania mu niezmierzonej oszczędności czasu lub wyniku finansowego."
+            }
+          ],
+          "bullets": []
+        },
+        {
+          "id": "status",
+          "title": {
+            "en": "Current status",
+            "pl": "Aktualny status"
+          },
+          "paragraphs": [
+            {
+              "en": "A production integration at NDI, under my ongoing maintenance.",
+              "pl": "Produkcyjna integracja w NDI, objęta moim bieżącym utrzymaniem."
+            }
+          ],
+          "bullets": []
+        }
+      ],
+      "repo": null,
+      "diagram": [
+        {
+          "en": "Company CRM",
+          "pl": "Firmowy CRM"
+        },
+        {
+          "en": "KSeF integration",
+          "pl": "Integracja KSeF"
+        },
+        {
+          "en": "Ongoing maintenance",
+          "pl": "Bieżące utrzymanie"
+        }
+      ],
+      "screenshot": null
+    },
+    {
+      "slug": "customer-app",
+      "title": {
+        "en": "I built a test app for customer requests.",
+        "pl": "Zbudowałem testową aplikację do zgłoszeń klientów."
+      },
+      "summary": {
+        "en": "React Native, TypeScript and Expo connected with an Express backend and the CRM.",
+        "pl": "React Native, TypeScript i Expo połączone z backendem Express oraz CRM."
+      },
+      "status": {
+        "en": "Test version",
+        "pl": "Wersja testowa"
+      },
+      "kind": {
+        "en": "Commercial work / NDI",
+        "pl": "Realizacja komercyjna / NDI"
+      },
+      "tech": [
+        "React Native",
+        "TypeScript",
+        "Expo",
+        "Express"
+      ],
+      "sections": [
+        {
+          "id": "context",
+          "title": {
+            "en": "Problem and scope",
+            "pl": "Problem i zakres"
+          },
+          "paragraphs": [
+            {
+              "en": "The application handles customer requests and connects them with the existing CRM. I built a mobile client and its backend instead of treating the app as an isolated interface. The work is part of the company environment.",
+              "pl": "Aplikacja obsługuje zgłoszenia klientów i łączy je z istniejącym CRM. Zbudowałem klienta mobilnego wraz z backendem, zamiast traktować aplikację jako odizolowany interfejs. Projekt jest częścią środowiska firmy."
+            }
+          ],
+          "bullets": []
+        },
+        {
+          "id": "role",
+          "title": {
+            "en": "What I built myself",
+            "pl": "Co zbudowałem samodzielnie"
+          },
+          "paragraphs": [
+            {
+              "en": "I independently designed and implemented the UI, database and security controls. I built the React Native / TypeScript / Expo application, its Express backend and the integration of customer requests with the CRM.",
+              "pl": "Samodzielnie zaprojektowałem i zaimplementowałem UI, bazę danych i zabezpieczenia. Zbudowałem aplikację React Native / TypeScript / Expo, backend Express oraz integrację zgłoszeń klientów z CRM."
+            }
+          ],
+          "bullets": []
+        },
+        {
+          "id": "features",
+          "title": {
+            "en": "Confirmed functionality",
+            "pl": "Potwierdzone funkcje"
+          },
+          "paragraphs": [],
+          "bullets": [
+            {
+              "en": "A mobile interface for the customer-request workflow.",
+              "pl": "Mobilny interfejs procesu zgłoszeń klientów."
+            },
+            {
+              "en": "A backend connecting requests with the CRM.",
+              "pl": "Backend łączący zgłoszenia z CRM."
+            },
+            {
+              "en": "A database and security controls designed for the application.",
+              "pl": "Baza danych i zabezpieczenia zaprojektowane dla aplikacji."
+            }
+          ]
+        },
+        {
+          "id": "architecture",
+          "title": {
+            "en": "Client, backend and CRM",
+            "pl": "Klient, backend i CRM"
+          },
+          "paragraphs": [
+            {
+              "en": "React Native and Expo provide the mobile client; TypeScript is used in the app and Express provides the backend. The backend integrates the request flow with the CRM.",
+              "pl": "React Native i Expo tworzą klienta mobilnego, TypeScript jest wykorzystywany w aplikacji, a Express obsługuje backend. Backend integruje przepływ zgłoszeń z CRM."
+            },
+            {
+              "en": "This project is separate from D&D Companion: that personal application uses Vite and Capacitor, not this React Native stack.",
+              "pl": "To osobny projekt od D&D Companion: moja aplikacja RPG korzysta z Vite i Capacitor, a nie z tego stosu React Native."
+            }
+          ],
+          "bullets": []
+        },
+        {
+          "id": "verification",
+          "title": {
+            "en": "Verification",
+            "pl": "Weryfikacja"
+          },
+          "paragraphs": [
+            {
+              "en": "I tested the application after implementing its interface, data and integration. I present it as a test version, not as a completed public customer rollout.",
+              "pl": "Przetestowałem aplikację po zaimplementowaniu interfejsu, danych i integracji. Pokazuję ją jako wersję testową, nie zakończone publiczne wdrożenie dla klientów."
+            }
+          ],
+          "bullets": []
+        },
+        {
+          "id": "status",
+          "title": {
+            "en": "Current status",
+            "pl": "Aktualny status"
+          },
+          "paragraphs": [
+            {
+              "en": "The current published description is a test version. The commercial case study contains no company code, internal addresses or screenshots with customer information.",
+              "pl": "Aktualny opis dotyczy wersji testowej. Case study komercyjne nie zawiera kodu firmy, wewnętrznych adresów ani zrzutów z informacjami klientów."
+            }
+          ],
+          "bullets": []
+        }
+      ],
+      "repo": null,
+      "diagram": [
+        {
+          "en": "React Native / Expo",
+          "pl": "React Native / Expo"
+        },
+        {
+          "en": "Express API",
+          "pl": "API Express"
+        },
+        {
+          "en": "CRM requests",
+          "pl": "Zgłoszenia w CRM"
+        }
+      ],
+      "screenshot": null
+    },
+    {
+      "slug": "dnd-companion",
+      "title": {
+        "en": "I brought our RPG notes into one app.",
+        "pl": "Zebrałem nasze notatki RPG w jednej aplikacji."
+      },
+      "summary": {
+        "en": "D&D Companion connects character sheets, equipment, notes and campaigns for tabletop sessions.",
+        "pl": "D&D Companion łączy karty postaci, ekwipunek, notatki i kampanie potrzebne podczas sesji RPG."
+      },
+      "status": {
+        "en": "In development / published PWA",
+        "pl": "Rozwijany / opublikowana PWA"
+      },
+      "kind": {
+        "en": "Personal project",
+        "pl": "Projekt własny"
+      },
+      "tech": [
+        "JavaScript",
+        "Vite",
+        "Capacitor",
+        "Express",
+        "PostgreSQL"
+      ],
+      "sections": [
+        {
+          "id": "context",
+          "title": {
+            "en": "Why I started",
+            "pl": "Dlaczego zacząłem"
+          },
+          "paragraphs": [
+            {
+              "en": "During sessions with friends, we used paper character sheets and notebooks. Information was lost, some notes were hard to read, and replacing a notebook meant copying everything again.",
+              "pl": "Podczas sesji ze znajomymi korzystaliśmy z papierowych kart postaci i zeszytów. Informacje się gubiły, część zapisów była nieczytelna, a przy wymianie zeszytu trzeba było przepisywać dane."
+            },
+            {
+              "en": "We usually have a phone with us. I created an application to keep the information needed during a game in one place: the character, equipment, statistics, notes and campaign.",
+              "pl": "Telefon zwykle mamy przy sobie. Stworzyłem aplikację, która zbiera informacje potrzebne podczas gry w jednym miejscu: postać, ekwipunek, statystyki, notatki i kampanię."
+            }
+          ],
+          "bullets": []
+        },
+        {
+          "id": "features",
+          "title": {
+            "en": "What is implemented",
+            "pl": "Co jest zaimplementowane"
+          },
+          "paragraphs": [],
+          "bullets": [
+            {
+              "en": "Create, edit and delete characters, with statistics and formula-based calculations.",
+              "pl": "Tworzenie, edycja i usuwanie postaci ze statystykami i obliczeniami na podstawie wzorów."
+            },
+            {
+              "en": "Equipment with quantities, descriptions, categories, order and quick slots.",
+              "pl": "Ekwipunek z ilościami, opisami, kategoriami, kolejnością i szybkimi slotami."
+            },
+            {
+              "en": "Text notes and a drawing canvas with zoom and panning.",
+              "pl": "Notatki tekstowe i kartka do rysowania z powiększaniem oraz przesuwaniem."
+            },
+            {
+              "en": "Private messages between users who are friends, with notifications.",
+              "pl": "Prywatne wiadomości między użytkownikami będącymi znajomymi oraz powiadomienia."
+            },
+            {
+              "en": "Campaign membership with a selected character; DM and co-DM management tools.",
+              "pl": "Uczestnictwo w kampanii z wybraną postacią oraz narzędzia DM i współ-DM."
+            }
+          ]
+        },
+        {
+          "id": "role",
+          "title": {
+            "en": "My project and its structure",
+            "pl": "Mój projekt i jego struktura"
+          },
+          "paragraphs": [
+            {
+              "en": "I created D&D Companion around the needs of our RPG sessions. The current project includes a shared client, an API, database migrations and deployment configuration.",
+              "pl": "Stworzyłem D&D Companion wokół potrzeb naszych sesji RPG. Aktualny projekt obejmuje wspólnego klienta, API, migracje bazy danych i konfigurację wdrożenia."
+            },
+            {
+              "en": "The client is JavaScript with Vite and Capacitor. It can be built as a PWA and for native mobile projects. A separate Expo preview exists for development; it is not the production client.",
+              "pl": "Klient korzysta z JavaScript, Vite i Capacitor. Może być budowany jako PWA i w projektach natywnych. Osobny podgląd Expo służy do pracy deweloperskiej; nie jest klientem produkcyjnym."
+            }
+          ],
+          "bullets": []
+        },
+        {
+          "id": "data",
+          "title": {
+            "en": "Data and permissions",
+            "pl": "Dane i uprawnienia"
+          },
+          "paragraphs": [
+            {
+              "en": "The Express API stores data in PostgreSQL. Character records have an owner and flexible sheet data in JSONB. Campaign membership links a user with the character selected for that campaign.",
+              "pl": "API Express przechowuje dane w PostgreSQL. Postać ma właściciela oraz elastyczne dane karty w JSONB. Uczestnictwo w kampanii wiąże użytkownika z wybraną dla niej postacią."
+            },
+            {
+              "en": "The API checks character ownership. Campaign management is restricted to the owner or a co-DM. DM tools include member and character views, private notes and adding equipment. These checks are performed by the API, not just by hiding controls in the interface.",
+              "pl": "API sprawdza własność postaci. Zarządzanie kampanią jest ograniczone do właściciela lub współ-DM. Narzędzia DM obejmują podgląd uczestników i postaci, prywatne notatki oraz dodawanie przedmiotów. Uprawnienia są sprawdzane przez API, nie tylko przez ukrywanie przycisków."
+            }
+          ],
+          "bullets": []
+        },
+        {
+          "id": "architecture",
+          "title": {
+            "en": "One client, a separate API",
+            "pl": "Jeden klient, osobne API"
+          },
+          "paragraphs": [
+            {
+              "en": "The PWA and mobile client communicate with the Node.js / Express API. PostgreSQL handles persistent records. Authentication uses passwords hashed with bcrypt, access tokens and refresh tokens.",
+              "pl": "PWA i klient mobilny komunikują się z API Node.js / Express. PostgreSQL przechowuje trwałe dane. Uwierzytelnianie wykorzystuje hasła haszowane bcrypt, tokeny dostępu i tokeny odświeżające."
+            },
+            {
+              "en": "The relational model keeps ownership and membership explicit while JSONB supports flexible character data. This describes the current architecture; it is not a claim that every design trade-off has been measured.",
+              "pl": "Model relacyjny jawnie zapisuje własność i uczestnictwo, a JSONB obsługuje elastyczne dane postaci. To opis obecnej architektury, a nie deklaracja, że każdy kompromis projektowy został zmierzony."
+            }
+          ],
+          "bullets": []
+        },
+        {
+          "id": "deployment",
+          "title": {
+            "en": "Deployment and current state",
+            "pl": "Wdrożenie i aktualny stan"
+          },
+          "paragraphs": [
+            {
+              "en": "The PWA is published on GitHub Pages and its public login screen is accessible. The current repository configures the API and PostgreSQL on Render, and GitHub Releases contains an Android package.",
+              "pl": "PWA jest opublikowana na GitHub Pages, a publiczny ekran logowania jest dostępny. Aktualne repozytorium opisuje API i PostgreSQL na Render, a GitHub Releases zawiera pakiet Android."
+            },
+            {
+              "en": "The project remains in development. Native iOS project files do not imply an App Store release. I link the public PWA and source repository without claiming production uptime or a number of active players.",
+              "pl": "Projekt pozostaje rozwijany. Pliki projektu iOS nie oznaczają wydania w App Store. Udostępniam link do PWA i repozytorium, bez deklaracji dostępności produkcyjnej ani liczby aktywnych graczy."
+            }
+          ],
+          "bullets": []
+        }
+      ],
+      "repo": "https://github.com/Rabuuwu/DnDCompanion",
+      "diagram": [
+        {
+          "en": "PWA / Capacitor client",
+          "pl": "Klient PWA / Capacitor"
+        },
+        {
+          "en": "Express API",
+          "pl": "API Express"
+        },
+        {
+          "en": "PostgreSQL",
+          "pl": "PostgreSQL"
+        }
+      ],
+      "screenshot": {
+        "file": "dnd-login.png",
+        "alt": {
+          "en": "The public D&D Companion login screen on a phone-sized viewport.",
+          "pl": "Publiczny ekran logowania D&D Companion w widoku telefonu."
+        },
+        "caption": {
+          "en": "Actual published PWA login screen. No player or character data.",
+          "pl": "Rzeczywisty ekran logowania opublikowanej PWA. Bez danych graczy i postaci."
+        }
+      }
+    },
+    {
+      "slug": "trading-helper",
+      "title": {
+        "en": "I develop a tool for market analysis and PAPER simulation.",
+        "pl": "Rozwijam narzędzie do analizy rynku i symulacji PAPER."
+      },
+      "summary": {
+        "en": "TradingHelper separates market data, scanning rules, alerts, a dashboard and simulated trades.",
+        "pl": "TradingHelper rozdziela dane rynkowe, reguły skanowania, alerty, dashboard i transakcje symulowane."
+      },
+      "status": {
+        "en": "In development / simulation only",
+        "pl": "Rozwijany / wyłącznie symulacja"
+      },
+      "kind": {
+        "en": "Personal project",
+        "pl": "Projekt własny"
+      },
+      "tech": [
+        "Python",
+        "FastAPI",
+        "SQLite",
+        "JavaScript",
+        "PWA"
+      ],
+      "sections": [
+        {
+          "id": "goal",
+          "title": {
+            "en": "What I am building",
+            "pl": "Co rozwijam"
+          },
+          "paragraphs": [
+            {
+              "en": "TradingHelper is my tool for exploring market data and testing rule-based ideas in PAPER simulation. It does not place orders with a broker, and simulated results are not real investment returns.",
+              "pl": "TradingHelper to moje narzędzie do analizowania danych rynkowych i testowania reguł w symulacji PAPER. Nie składa zleceń u brokera, a wyniki symulacji nie są wynikami rzeczywistego inwestowania."
+            }
+          ],
+          "bullets": []
+        },
+        {
+          "id": "data",
+          "title": {
+            "en": "Market data",
+            "pl": "Dane rynkowe"
+          },
+          "paragraphs": [
+            {
+              "en": "The code supports Twelve Data and an offline sample provider. The provider interface handles quotes, candles, symbols and market status. A SQLite cache, retries and API-credit limits sit between the provider and the rest of the application.",
+              "pl": "Kod obsługuje Twelve Data oraz dostawcę demonstracyjnych danych offline. Interfejs dostawcy udostępnia notowania, świece, symbole i status rynku. Cache SQLite, ponowienia i limity kredytów API oddzielają dostawcę od reszty aplikacji."
+            },
+            {
+              "en": "Sample mode generates demonstration data without market requests. The dashboard screenshot on this page uses that mode, not live quotations or real account results.",
+              "pl": "Tryb sample generuje dane demonstracyjne bez zapytań do rynku. Zrzut dashboardu na tej stronie pokazuje ten tryb, nie notowania na żywo ani wyniki rzeczywistego rachunku."
+            }
+          ],
+          "bullets": []
+        },
+        {
+          "id": "scanner",
+          "title": {
+            "en": "Scanning and signals",
+            "pl": "Skanowanie i sygnały"
+          },
+          "paragraphs": [
+            {
+              "en": "The scanner combines multiple timeframes and rules for trend, momentum, volume, breakouts and pullbacks. It uses indicators including moving averages, RSI, MACD and ATR, and attaches reasons and warnings to its scoring.",
+              "pl": "Skaner łączy kilka interwałów oraz reguły trendu, momentum, wolumenu, wybicia i cofnięcia. Wykorzystuje między innymi średnie kroczące, RSI, MACD i ATR oraz dołącza uzasadnienia i ostrzeżenia do oceny."
+            },
+            {
+              "en": "The risk layer calculates possible entry, stop, targets, position sizing and cost feasibility. A score describes the result of configured rules; it is not a probability of profit.",
+              "pl": "Warstwa ryzyka oblicza potencjalne wejście, stop, cele, wielkość pozycji i wykonalność po uwzględnieniu kosztów. Ocena wynika ze skonfigurowanych reguł; nie jest prawdopodobieństwem zysku."
+            }
+          ],
+          "bullets": []
+        },
+        {
+          "id": "interface",
+          "title": {
+            "en": "Dashboard and alerts",
+            "pl": "Dashboard i alerty"
+          },
+          "paragraphs": [
+            {
+              "en": "The responsive PWA dashboard shows signals, a watchlist, candles, portfolio history, a trade journal and PAPER controls. Server-Sent Events refresh the interface as backend state changes.",
+              "pl": "Responsywny dashboard PWA pokazuje sygnały, watchlistę, świece, historię portfela, dziennik transakcji i obsługę PAPER. Server-Sent Events odświeżają interfejs po zmianach stanu backendu."
+            },
+            {
+              "en": "Implemented alerts use ntfy. The backend queues messages in SQLite, limits repeated notifications and retries failed delivery. This is distinct from email, Telegram or browser-push integrations.",
+              "pl": "Zaimplementowane alerty korzystają z ntfy. Backend kolejkuje wiadomości w SQLite, ogranicza powtórzenia i ponawia nieudane wysyłki. Nie jest to integracja e-mail, Telegram ani browser push."
+            }
+          ],
+          "bullets": []
+        },
+        {
+          "id": "paper",
+          "title": {
+            "en": "What PAPER means here",
+            "pl": "Co oznacza tutaj PAPER"
+          },
+          "paragraphs": [
+            {
+              "en": "Simulated buy and sell operations update cash, positions and the transaction ledger together. PAPER state is separate from real broker accounts. Configurable broker cost profiles are cost models, not connections for sending orders.",
+              "pl": "Symulowane kupno i sprzedaż aktualizują razem gotówkę, pozycje i rejestr transakcji. Stan PAPER jest oddzielony od prawdziwych rachunków brokerskich. Profile kosztów brokerów to modele kosztów, nie połączenia do składania zleceń."
+            },
+            {
+              "en": "The repository also includes a separate autonomous PAPER experiment and a backtest engine. These test simulated rules and remain separate from actual investing.",
+              "pl": "Repozytorium zawiera też osobny eksperyment autonomicznego PAPER i silnik backtestów. Służą do testowania reguł w symulacji i pozostają oddzielone od rzeczywistego inwestowania."
+            }
+          ],
+          "bullets": []
+        },
+        {
+          "id": "architecture",
+          "title": {
+            "en": "Architecture and running the project",
+            "pl": "Architektura i uruchamianie"
+          },
+          "paragraphs": [
+            {
+              "en": "Python provides the scanning and data-processing modules; FastAPI exposes the API and dashboard. SQLite stores application state. The client uses plain JavaScript, HTML and CSS with a PWA manifest and service worker.",
+              "pl": "Python obsługuje skanowanie i przetwarzanie danych, a FastAPI udostępnia API i dashboard. SQLite przechowuje stan aplikacji. Klient korzysta z JavaScript, HTML i CSS oraz manifestu PWA i service workera."
+            },
+            {
+              "en": "The command-line entry point can initialise the database, run a single scan, start the API or run the API with the worker. Linux service configuration is included in the repository. I do not present that configuration as proof of a continuously running public service.",
+              "pl": "Narzędzie z linii poleceń pozwala zainicjalizować bazę, wykonać pojedynczy skan, uruchomić API lub API wraz z workerem. Repozytorium zawiera konfigurację usług Linux. Nie traktuję tej konfiguracji jako dowodu stale działającej publicznej usługi."
+            }
+          ],
+          "bullets": []
+        },
+        {
+          "id": "status",
+          "title": {
+            "en": "Current status and limits",
+            "pl": "Status i ograniczenia"
+          },
+          "paragraphs": [
+            {
+              "en": "I present TradingHelper as a developing analysis and simulation project. Market-data quality, delay, costs and configured assumptions affect its results. The portfolio makes no claim of profits or completed live-investment tests.",
+              "pl": "Pokazuję TradingHelper jako rozwijany projekt analityczny i symulacyjny. Jakość i opóźnienie danych, koszty oraz skonfigurowane założenia wpływają na wyniki. Portfolio nie deklaruje zysków ani ukończonych testów rzeczywistego inwestowania."
+            }
+          ],
+          "bullets": []
+        }
+      ],
+      "repo": "https://github.com/Rabuuwu/TradingHelper",
+      "diagram": [
+        {
+          "en": "Data provider",
+          "pl": "Dostawca danych"
+        },
+        {
+          "en": "Scanner and risk rules",
+          "pl": "Skaner i reguły ryzyka"
+        },
+        {
+          "en": "SQLite / FastAPI",
+          "pl": "SQLite / FastAPI"
+        },
+        {
+          "en": "PWA / PAPER / ntfy",
+          "pl": "PWA / PAPER / ntfy"
+        }
+      ],
+      "screenshot": {
+        "file": "trading-dashboard.png",
+        "alt": {
+          "en": "TradingHelper dashboard running locally with offline sample data.",
+          "pl": "Dashboard TradingHelper uruchomiony lokalnie z demonstracyjnymi danymi offline."
+        },
+        "caption": {
+          "en": "Actual application UI, local sample mode. Demonstration data only; no live prices or real investment results.",
+          "pl": "Rzeczywisty interfejs aplikacji, lokalny tryb sample. Wyłącznie dane demonstracyjne; bez notowań na żywo i rzeczywistych wyników inwestowania."
+        }
+      }
+    }
+  ],
+  "timeline": [
+    {
+      "date": {
+        "en": "2025 — present",
+        "pl": "2025 — obecnie"
+      },
+      "title": {
+        "en": "Software Developer / NDI",
+        "pl": "Programista / NDI"
+      },
+      "body": {
+        "en": "I develop and administer the CRM, design databases and interfaces, and build API integrations. I verify changes, deploy them and maintain the production system.",
+        "pl": "Rozwijam i administruję CRM, projektuję bazy i interfejsy, buduję integracje API. Weryfikuję zmiany, wdrażam je i utrzymuję system produkcyjny."
+      }
+    },
+    {
+      "date": {
+        "en": "2023 — 2025",
+        "pl": "2023 — 2025"
+      },
+      "title": {
+        "en": "Telecommunications installer / NDI",
+        "pl": "Monter instalacji telekomunikacyjnych / NDI"
+      },
+      "body": {
+        "en": "I installed and configured telecommunications devices, worked with the ISP network, VoIP/SIP and VLANs, and prepared network inventory and SIDUSIS reporting data. I also took on software development tasks from the start of my employment.",
+        "pl": "Instalowałem i konfigurowałem urządzenia telekomunikacyjne, pracowałem z siecią ISP, VoIP/SIP i VLAN oraz przygotowywałem paszportyzację i dane do SIDUSIS. Od początku zatrudnienia wykonywałem też zadania programistyczne."
+      }
+    },
+    {
+      "date": {
+        "en": "2019 — 2023",
+        "pl": "2019 — 2023"
+      },
+      "title": {
+        "en": "IT Technician / Technical Secondary School No. 3",
+        "pl": "Technik informatyk / Technikum nr 3"
+      },
+      "body": {
+        "en": "I completed the IT technician programme at Technical Secondary School No. 3 in Tychy.",
+        "pl": "Ukończyłem kierunek technik informatyk w Technikum nr 3 w Tychach."
+      }
+    }
+  ],
+  "competencies": [
+    [
+      {
+        "en": "Frontend and UI/UX",
+        "pl": "Frontend i UI/UX"
+      },
+      {
+        "en": "I design and implement CRM interfaces and the UI of the test mobile app. I use JavaScript, TypeScript and React across my work.",
+        "pl": "Projektuję i implementuję interfejsy CRM oraz UI testowej aplikacji mobilnej. W pracy wykorzystuję JavaScript, TypeScript i React."
+      }
+    ],
+    [
+      {
+        "en": "Backend and API",
+        "pl": "Backend i API"
+      },
+      {
+        "en": "I build endpoints and integrations in Node.js / Express and PHP, including the API connecting local AI with the CRM.",
+        "pl": "Buduję endpointy i integracje w Node.js / Express oraz PHP, między innymi API łączące lokalne AI z CRM."
+      }
+    ],
+    [
+      {
+        "en": "Databases",
+        "pl": "Bazy danych"
+      },
+      {
+        "en": "I design PostgreSQL tables, relationships and queries. The inventory module connects device history with customer addresses.",
+        "pl": "Projektuję tabele, relacje i zapytania PostgreSQL. W module magazynowym łączę historię urządzeń z adresami klientów."
+      }
+    ],
+    [
+      {
+        "en": "Integrations and automation",
+        "pl": "Integracje i automatyzacja"
+      },
+      {
+        "en": "I connect the CRM with KSeF, electronic signatures, coverage maps and automated document generation.",
+        "pl": "Łączę CRM z KSeF, podpisami elektronicznymi, mapą zasięgu i automatycznym generowaniem dokumentów."
+      }
+    ],
+    [
+      {
+        "en": "Mobile applications",
+        "pl": "Aplikacje mobilne"
+      },
+      {
+        "en": "I built the test request app in React Native, TypeScript and Expo. D&D Companion uses a separate Vite / Capacitor client.",
+        "pl": "Zbudowałem testową aplikację zgłoszeń w React Native, TypeScript i Expo. D&D Companion ma osobnego klienta Vite / Capacitor."
+      }
+    ],
+    [
+      {
+        "en": "Local AI and LLMs",
+        "pl": "Lokalne AI i LLM"
+      },
+      {
+        "en": "I used faster-whisper for transcription, fine-tuned a local LLM and integrated its summaries with the CRM.",
+        "pl": "Wykorzystałem faster-whisper do transkrypcji, dostroiłem lokalny LLM i zintegrowałem jego podsumowania z CRM."
+      }
+    ],
+    [
+      {
+        "en": "Deployment and maintenance",
+        "pl": "Wdrożenia i utrzymanie"
+      },
+      {
+        "en": "I manually verify changes in a test environment, deploy and maintain CRM modules, diagnose issues and support users. I work with Linux and Docker.",
+        "pl": "Weryfikuję zmiany manualnie w środowisku testowym, wdrażam i utrzymuję moduły CRM, diagnozuję błędy i wspieram użytkowników. Pracuję z Linuxem i Dockerem."
+      }
+    ],
+    [
+      {
+        "en": "Telecommunications",
+        "pl": "Telekomunikacja"
+      },
+      {
+        "en": "I have configured ISP equipment, business VoIP/SIP systems and VLANs, and worked on network inventory and SIDUSIS reporting.",
+        "pl": "Konfigurowałem urządzenia sieci ISP, systemy VoIP/SIP dla firm i VLAN, zajmowałem się paszportyzacją i raportowaniem do SIDUSIS."
+      }
+    ]
+  ],
+  "steps": [
+    [
+      {
+        "en": "Understand the process",
+        "pl": "Poznaję proces"
+      },
+      {
+        "en": "For the inventory module, the starting point was a paper workflow and the work around devices.",
+        "pl": "W module magazynowym punktem wyjścia był papierowy obieg i praca z urządzeniami."
+      }
+    ],
+    [
+      {
+        "en": "Define the requirements",
+        "pl": "Określam wymagania"
+      },
+      {
+        "en": "I translate a business need into the data, functions and integrations the CRM must support.",
+        "pl": "Przekładam potrzebę biznesową na dane, funkcje i integracje, które ma obsłużyć CRM."
+      }
+    ],
+    [
+      {
+        "en": "Design data and interfaces",
+        "pl": "Projektuję dane i interfejs"
+      },
+      {
+        "en": "I designed the inventory data model and independently built the mobile app UI and database.",
+        "pl": "Zaprojektowałem model danych magazynu oraz samodzielnie UI i bazę aplikacji mobilnej."
+      }
+    ],
+    [
+      {
+        "en": "Implement and connect",
+        "pl": "Implementuję i łączę"
+      },
+      {
+        "en": "For call summaries, I built the API and the presentation of local-model output in the CRM.",
+        "pl": "Dla podsumowań rozmów zbudowałem API i prezentację wyników lokalnego modelu w CRM."
+      }
+    ],
+    [
+      {
+        "en": "Verify the behaviour",
+        "pl": "Weryfikuję działanie"
+      },
+      {
+        "en": "I manually test changes in a test environment, including integrations and the mobile request app.",
+        "pl": "Testuję zmiany manualnie w środowisku testowym, w tym integracje i aplikację zgłoszeń."
+      }
+    ],
+    [
+      {
+        "en": "Deploy",
+        "pl": "Wdrażam"
+      },
+      {
+        "en": "I tested and deployed the KSeF integration and the inventory module.",
+        "pl": "Przetestowałem i wdrożyłem integrację KSeF oraz moduł magazynowy."
+      }
+    ],
+    [
+      {
+        "en": "Maintain and improve",
+        "pl": "Utrzymuję i rozwijam"
+      },
+      {
+        "en": "I maintain the production CRM, diagnose problems and provide first-line user support.",
+        "pl": "Utrzymuję produkcyjny CRM, diagnozuję problemy i zapewniam użytkownikom pierwszą linię wsparcia."
+      }
+    ]
+  ]
+}

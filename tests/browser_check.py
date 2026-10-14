@@ -10,7 +10,7 @@ SHOTS.mkdir(exist_ok=True)
 
 with sync_playwright() as p:
     browser = p.chromium.launch(executable_path=CHROME, headless=True)
-    cases = [('pl-PL','light',1440),('en-US','dark',1440),('pl-PL','dark',390),('en-US','light',320),('de-DE','light',768)]
+    cases = [('pl-PL','light',1440),('en-US','dark',1440),('pl-PL','dark',390),('en-US','light',320),('pl-PL','light',320),('de-DE','light',768)]
     for locale, theme, width in cases:
         context = browser.new_context(locale=locale, color_scheme=theme, viewport={'width':width,'height':950}, reduced_motion='reduce')
         page = context.new_page()
