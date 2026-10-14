@@ -344,8 +344,8 @@
               "pl": "Odpowiadałem za dostęp do nagrań rozmów."
             },
             {
-              "en": "I used faster-whisper for transcription; I did not write the transcription model.",
-              "pl": "Do transkrypcji wykorzystałem faster-whisper; nie tworzyłem modelu transkrypcji."
+              "en": "I used faster-whisper for transcription.",
+              "pl": "Do transkrypcji wykorzystałem faster-whisper."
             },
             {
               "en": "I built the integration API myself.",
@@ -391,8 +391,8 @@
           },
           "paragraphs": [
             {
-              "en": "I fine-tuned the local LLM and integrated its generated summaries with the CRM. This is practical work with an existing model and its output, rather than a claim that I built a language model from scratch.",
-              "pl": "Dostroiłem lokalny LLM i zintegrowałem generowane przez niego podsumowania z CRM. To praktyczna praca z istniejącym modelem i jego wynikami, a nie tworzenie modelu językowego od podstaw."
+              "en": "I fine-tuned the local LLM and integrated its generated summaries with the CRM. My work connected the model output with the API and the interface used by staff.",
+              "pl": "Dostroiłem lokalny LLM i zintegrowałem generowane przez niego podsumowania z CRM. Połączyłem wyniki modelu z API i interfejsem używanym przez pracowników."
             }
           ],
           "bullets": []
@@ -405,8 +405,8 @@
           },
           "paragraphs": [
             {
-              "en": "I estimate that call documentation went from about 3 minutes to about 15 seconds. I derived the estimate by comparing average times. It describes documentation time, not the duration of the entire transcription and inference pipeline.",
-              "pl": "Szacuję, że czas dokumentowania rozmowy skrócił się z około 3 minut do około 15 sekund. Oszacowanie wynika z porównania średnich czasów. Dotyczy dokumentowania rozmowy, nie czasu całej transkrypcji i inferencji."
+              "en": "I estimate that call documentation went from about 3 minutes to about 15 seconds. I derived the estimate by comparing average times. This is an approximate comparison, not a controlled benchmark.",
+              "pl": "Szacuję, że czas dokumentowania rozmowy skrócił się z około 3 minut do około 15 sekund. Oszacowanie wynika z porównania średnich czasów. To przybliżone porównanie, nie kontrolowany benchmark."
             }
           ],
           "bullets": []
@@ -633,8 +633,8 @@
         {
           "id": "features",
           "title": {
-            "en": "Confirmed functionality",
-            "pl": "Potwierdzone funkcje"
+            "en": "What the application does",
+            "pl": "Co robi aplikacja"
           },
           "paragraphs": [],
           "bullets": [
@@ -838,8 +838,8 @@
               "pl": "PWA i klient mobilny komunikują się z API Node.js / Express. PostgreSQL przechowuje trwałe dane. Uwierzytelnianie wykorzystuje hasła haszowane bcrypt, tokeny dostępu i tokeny odświeżające."
             },
             {
-              "en": "The relational model keeps ownership and membership explicit while JSONB supports flexible character data. This describes the current architecture; it is not a claim that every design trade-off has been measured.",
-              "pl": "Model relacyjny jawnie zapisuje własność i uczestnictwo, a JSONB obsługuje elastyczne dane postaci. To opis obecnej architektury, a nie deklaracja, że każdy kompromis projektowy został zmierzony."
+              "en": "The relational model keeps ownership and membership explicit while JSONB supports flexible character data.",
+              "pl": "Model relacyjny jawnie zapisuje własność i uczestnictwo, a JSONB obsługuje elastyczne dane postaci."
             }
           ],
           "bullets": []
