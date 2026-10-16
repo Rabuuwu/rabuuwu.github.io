@@ -44,6 +44,10 @@
       "en": "I started with the paper character sheets and notebooks we used during RPG sessions. The app brings characters, equipment, notes and campaigns together.",
       "pl": "Zacząłem od papierowych kart i zeszytów używanych podczas sesji RPG. Aplikacja zbiera postacie, ekwipunek, notatki i kampanie w jednym miejscu."
     },
+    "tradingBody": {
+      "en": "A market analysis and PAPER simulation app for macOS and Windows. On macOS, local OCR automatically reads visible TradingView prices.",
+      "pl": "Aplikacja do analizy rynku i symulacji PAPER na macOS i Windows. Na macOS lokalny OCR automatycznie odczytuje widoczne ceny z TradingView."
+    },
     "personal": {
       "en": "Personal project / in development",
       "pl": "Projekt własny / rozwijany"
@@ -905,8 +909,8 @@
         "pl": "Rozwijam narzędzie do analizy rynku i symulacji PAPER."
       },
       "summary": {
-        "en": "TradingHelper separates market data, scanning rules, alerts, a dashboard and simulated trades.",
-        "pl": "TradingHelper rozdziela dane rynkowe, reguły skanowania, alerty, dashboard i transakcje symulowane."
+        "en": "TradingHelper combines market analysis, a dashboard, PAPER simulation and desktop apps for macOS and Windows. macOS also supports local OCR of visible TradingView prices.",
+        "pl": "TradingHelper łączy analizę rynku, dashboard, symulację PAPER i aplikacje desktopowe na macOS oraz Windows. Wersja na macOS obsługuje też lokalny OCR widocznych cen z TradingView."
       },
       "status": {
         "en": "In development / simulation only",
@@ -921,7 +925,9 @@
         "FastAPI",
         "SQLite",
         "JavaScript",
-        "PWA"
+        "PWA",
+        "Desktop / PyInstaller",
+        "Swift / Vision (macOS)"
       ],
       "sections": [
         {
@@ -986,6 +992,10 @@
               "pl": "Responsywny dashboard PWA pokazuje sygnały, watchlistę, świece, historię portfela, dziennik transakcji i obsługę PAPER. Server-Sent Events odświeżają interfejs po zmianach stanu backendu."
             },
             {
+              "en": "The desktop app runs the local API, scheduler and dashboard together in one window on macOS and Windows. Its Windows build is produced by GitHub Actions. On macOS, Vision OCR can find a visible TradingView window and read its symbol and price locally; this approximate display is not stored, sent to the API or used to generate signals. OCR is not available on Windows.",
+              "pl": "Aplikacja desktopowa uruchamia lokalne API, scheduler i dashboard razem w jednym oknie na macOS i Windows. Wersję Windows buduje GitHub Actions. Na macOS Vision OCR może wykryć widoczne okno TradingView i lokalnie odczytać symbol oraz cenę; ten przybliżony podgląd nie jest zapisywany, wysyłany do API ani używany do generowania sygnałów. OCR nie jest dostępny na Windowsie."
+            },
+            {
               "en": "Implemented alerts use ntfy. The backend queues messages in SQLite, limits repeated notifications and retries failed delivery. This is distinct from email, Telegram or browser-push integrations.",
               "pl": "Zaimplementowane alerty korzystają z ntfy. Backend kolejkuje wiadomości w SQLite, ogranicza powtórzenia i ponawia nieudane wysyłki. Nie jest to integracja e-mail, Telegram ani browser push."
             }
@@ -1022,8 +1032,8 @@
               "pl": "Python obsługuje skanowanie i przetwarzanie danych, a FastAPI udostępnia API i dashboard. SQLite przechowuje stan aplikacji. Klient korzysta z JavaScript, HTML i CSS oraz manifestu PWA i service workera."
             },
             {
-              "en": "The command-line entry point can initialise the database, run a single scan, start the API or run the API with the worker. Linux service configuration is included in the repository. I do not present that configuration as proof of a continuously running public service.",
-              "pl": "Narzędzie z linii poleceń pozwala zainicjalizować bazę, wykonać pojedynczy skan, uruchomić API lub API wraz z workerem. Repozytorium zawiera konfigurację usług Linux. Nie traktuję tej konfiguracji jako dowodu stale działającej publicznej usługi."
+              "en": "The command-line entry point can initialise the database, run a single scan, start the API or run the API with the worker. The desktop app packages the local service and dashboard together; Windows builds are available from GitHub Actions. Linux service configuration is also included, but it does not imply a continuously running public service.",
+              "pl": "Narzędzie z linii poleceń pozwala zainicjalizować bazę, wykonać pojedynczy skan, uruchomić API lub API wraz z workerem. Aplikacja desktopowa łączy lokalną usługę i dashboard; build Windows jest dostępny w GitHub Actions. Repozytorium zawiera też konfigurację usług Linux, ale nie oznacza ona stale działającej publicznej usługi."
             }
           ],
           "bullets": []
