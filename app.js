@@ -9,7 +9,7 @@
       skip: 'Przejdź do treści', work: 'Projekty', about: 'O mnie', contact: 'Kontakt', location: 'Tychy, Polska',
       headline: 'Od realnego problemu<br>do działającego systemu.',
       intro: 'Tworzę aplikacje webowe i mobilne, łączę systemy i wykorzystuję AI w praktyce. Od pierwszej rozmowy po wdrożenie i utrzymanie.',
-      viewWork: 'Zobacz moje projekty', letsTalk: 'Porozmawiajmy ↗', interface: 'Interfejs', localLlm: 'Lokalny LLM',
+      viewWork: 'Zobacz moje projekty', letsTalk: 'Porozmawiajmy', interface: 'Interfejs', localLlm: 'Lokalny LLM',
       systemCaption: 'Różne elementy. Jeden działający system.', experienceShort: 'Rozwijam i utrzymuję oprogramowanie w NDI od 2023 roku.', scroll: 'Zobacz więcej ↓',
       workTitle: 'Oprogramowanie,<br>które robi różnicę.', workIntro: 'Wybrane realizacje komercyjne i projekty własne. Odpowiedzi na konkretne potrzeby.', commercial: 'Praca komercyjna / NDI',
       inventoryMetric: 'krótszy czas inwentaryzacji', inventoryTitle: 'Z papieru do połączonego magazynu.',

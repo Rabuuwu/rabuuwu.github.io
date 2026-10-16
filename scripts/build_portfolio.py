@@ -22,8 +22,8 @@ COMMON = {
  'cvTitle': {'en':'Experience and education in my CV.','pl':'Doświadczenie i wykształcenie w CV.'},
  'back': {'en':'Back to portfolio','pl':'Wróć do portfolio'},
  'contents': {'en':'In this case study','pl':'W tym case study'},
- 'source': {'en':'Source repository ↗','pl':'Repozytorium projektu ↗'},
- 'pwa': {'en':'Open the PWA ↗','pl':'Otwórz PWA ↗'},
+ 'source': {'en':'Source repository','pl':'Repozytorium projektu'},
+ 'pwa': {'en':'Open the PWA','pl':'Otwórz PWA'},
  'next': {'en':'Explore my other projects','pl':'Zobacz pozostałe projekty'},
  'caseCv': {'en':'My professional background','pl':'Moje doświadczenie zawodowe'},
  'caseContact': {'en':'Discuss a project or integration','pl':'Porozmawiajmy o projekcie lub integracji'},
@@ -83,7 +83,7 @@ def build_home():
   replacement=f'<a href="projects/{slug}/" class="project-link" data-case-link data-i18n="readCase">Read case study</a>'
   doc=re.sub(old,replacement,doc,flags=re.S)
  experiment=p.tag('h3',DATA['home']['fsTitle'],'fsTitle')+p.tag('p',DATA['home']['fsBody'],'fsBody')
- fs=f'<aside class="experiment">{experiment}<a class="text-link" href="https://github.com/Rabuuwu/FSE-IT" target="_blank" rel="noopener noreferrer">GitHub ↗</a></aside>'
+ fs=f'<aside class="experiment">{experiment}<a class="text-link" href="https://github.com/Rabuuwu/FSE-IT" target="_blank" rel="noopener noreferrer">GitHub</a></aside>'
  doc=doc.replace('</div></section>\n<section class="about-section',fs+'</div></section>\n<section class="about-section',1)
  # Replace the old technology-only lists and one-line timeline with a full dedicated section.
  doc=re.sub(r'<div class="skills">.*?</div></div></section>', '</div></section>',doc,flags=re.S,count=1)
@@ -129,8 +129,8 @@ def build_case(c):
   shot=c['screenshot'];p.add(shot['alt'],'screenshotAlt');caption=p.tag('figcaption',shot['caption'],'screenshotCaption')
   figure=f'<figure class="case-screenshot {"phone-shot" if c["slug"]=="dnd-companion" else ""}"><img src="../../assets/projects/{shot["file"]}" alt="{html.escape(shot["alt"]["en"],quote=True)}" data-i18n-alt="screenshotAlt" loading="lazy" width="{390 if c["slug"]=="dnd-companion" else 1440}" height="{844 if c["slug"]=="dnd-companion" else 1000}">{caption}</figure>'
  links=''
- if c['repo']:links+=f'<a class="button secondary" href="{c["repo"]}" target="_blank" rel="noopener noreferrer" data-i18n="source">Source repository ↗</a>'
- if c['slug']=='dnd-companion':links+='<a class="text-link" href="https://rabuuwu.github.io/DnDCompanion/" target="_blank" rel="noopener noreferrer" data-i18n="pwa">Open the PWA ↗</a>'
+ if c['repo']:links+=f'<a class="button secondary" href="{c["repo"]}" target="_blank" rel="noopener noreferrer" data-i18n="source">Source repository</a>'
+ if c['slug']=='dnd-companion':links+='<a class="text-link" href="https://rabuuwu.github.io/DnDCompanion/" target="_blank" rel="noopener noreferrer" data-i18n="pwa">Open the PWA</a>'
  title=p.tag('h1',c['title'],'caseTitle');summary=p.tag('p',c['summary'],'caseSummary',' class="case-lead"')
  kind=p.tag('p',c['kind'],'caseKind',' class="case-kind"');status=p.tag('p',c['status'],'caseStatus',' class="status-label"')
  tags='<ul class="tags">'+''.join('<li>'+html.escape(tech)+'</li>' for tech in c['tech'])+'</ul>'
