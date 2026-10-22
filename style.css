@@ -306,7 +306,7 @@ h1 {
   color:#e0e9ff
 }
 .node-api .node-symbol {
-  background:#ffffff20;
+  background:#2449c5;
   color:white
 }
 .node-api .node-light {
@@ -1078,9 +1078,9 @@ a:hover:not(.button):not(.wordmark) {
 .career-entry div p { color: var(--muted); font-size: 14px; margin-top: 13px; max-width: 75ch; }
 .competencies-section { padding-block: 70px; background: var(--surface); }
 .competence-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 65px; margin-top: 34px; }
-.competence-item { padding: 23px 0; border-top: 1px solid var(--line); }
-.competence-item h3 { font-size: 20px; }
-.competence-item p { color: var(--muted); font-size: 14px; margin-top: 12px; }
+.competence-item, .engineering-item { padding: 23px 0; border-top: 1px solid var(--line); }
+.competence-item h3, .engineering-item h3 { font-size: 20px; }
+.competence-item p, .engineering-item p { color: var(--muted); font-size: 14px; margin-top: 12px; }
 .approach-section { padding-block: 70px; }
 .work-steps { list-style: none; counter-reset: work-step; margin: 30px 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 24px 55px; }
 .work-step { counter-increment: work-step; position: relative; padding-left: 38px; }
