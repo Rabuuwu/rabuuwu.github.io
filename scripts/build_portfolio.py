@@ -101,6 +101,11 @@ def build_home():
  approach='<section class="approach-section wrap" id="approach" aria-labelledby="approach-title">'+p.tag('h2',DATA['home']['approachTitle'],'approachTitle',' id="approach-title"')+p.tag('p',DATA['home']['approachIntro'],'approachIntro',' class="section-intro"')+'<ol class="work-steps">'+steps+'</ol></section>'
  personal='<section class="personal-section wrap">'+p.tag('h2',DATA['home']['personalTitle'],'personalTitle')+p.tag('p',DATA['home']['personalBody'],'personalBody')+'</section>'
  doc=doc.replace('<section class="cv-section',experience+competencies+approach+personal+'<section class="cv-section',1)
+ # Reuse the existing typography and grid; these sections distinguish evidence from claims.
+ for field, heading in [('engineering', {'en':'Engineering practice','pl':'Praktyka inżynierska'}), ('aiAutomation', {'en':'AI and automation','pl':'AI i automatyzacja'})]:
+  cards=''.join('<article class="engineering-item">'+p.tag('h3',title,f'{field}Title{i}')+p.tag('p',body,f'{field}Body{i}')+'</article>' for i,(title,body) in enumerate(DATA[field]))
+  section=f'<section class="competencies-section" id="{field}" aria-labelledby="{field}-title"><div class="wrap">'+p.tag('h2',heading,f'{field}Heading',f' id="{field}-title"')+'<div class="competence-grid">'+cards+'</div></div></section>'
+  doc=doc.replace('<section class="cv-section',section+'<section class="cv-section',1)
  offer='<div class="offer">'+p.tag('h3',DATA['home']['offerTitle'],'offerTitle')+p.tag('p',DATA['home']['offerBody'],'offerBody')+'</div>'
  doc=doc.replace('<a class="email"',offer+'<a class="email"',1)
  doc=re.sub(r'<dialog\b.*?</dialog>',cv_dialog(),doc,flags=re.S)

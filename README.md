@@ -40,3 +40,16 @@ Jeśli chcesz porozmawiać o aplikacji, integracji albo stronie internetowej, [n
 ---
 
 Stronę zbudowałem w HTML, CSS i JavaScript. Lokalny podgląd uruchomisz poleceniem `python3 -m http.server 8765 --bind 127.0.0.1` w katalogu projektu, a następnie otworzysz `http://127.0.0.1:8765`.
+
+## Lokalna kontrola jakości
+
+Treści PL/EN mają źródło w `content/portfolio.json`, układ w `templates/home.html`, a wygenerowane HTML są zapisane w repozytorium. Po zmianie treści wykonaj:
+
+```bash
+python3 scripts/build_portfolio.py
+python3 -m unittest discover -s tests -p 'test_*.py' -v
+```
+
+Osiem testów sprawdza odtwarzalność siedmiu stron, linki/fragmenty i zasoby, metadane oraz uczciwe rozdzielenie stażu IT od stanowiska programisty. Osobne testy przeglądarkowe nadal są potrzebne do oceny motywów, języków, klawiatury i responsywności. CI weryfikuje PR; publikacja pozostaje osobnym krokiem istniejącego workflow na `main`.
+
+Sekcje Engineering i AI & Automation rozdzielają obecne rozwiązania, ograniczenia oraz prace w rozwoju. Poprawki audytowe powstały przy wsparciu Codexa; ich obecność nie dowodzi samodzielnego opanowania wszystkich mechanizmów przez autora. Nie deklarujemy wyników wydajności bez odtwarzalnych pomiarów. Istniejące PDF CV wymagają osobnego przeglądu przed aktualizacją i publikacją.
