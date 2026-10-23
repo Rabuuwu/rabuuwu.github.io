@@ -30,8 +30,8 @@
   const aria = { en: { navigation: 'Main navigation', flow: 'System flow', systemAlt: 'Connected interface, API, CRM database and local AI modules' }, pl: { navigation: 'Nawigacja główna', flow: 'Przepływ systemu', systemAlt: 'Połączone moduły interfejsu, API, bazy CRM i lokalnego AI' } };
   function read(key) { try { return localStorage.getItem(key); } catch { return null; } }
   function save(key, value) { try { localStorage.setItem(key, value); } catch { /* Preferences still work without storage. */ } }
-  let language = read('portfolio-language');
-  if (!['pl', 'en'].includes(language)) language = (navigator.languages?.[0] || navigator.language || 'en').toLowerCase().startsWith('pl') ? 'pl' : 'en';
+  // Each language has a crawlable URL; the document language is authoritative.
+  let language = document.documentElement.lang === 'pl' ? 'pl' : 'en';
   const langButton = document.getElementById('language');
   const themeButton = document.getElementById('theme');
   const frame = document.getElementById('cv-frame');
@@ -61,10 +61,11 @@
       document.querySelector('meta[name="description"]').content = meta.description;
       document.querySelector('meta[property="og:title"]').content = meta.title;
       document.querySelector('meta[property="og:description"]').content = meta.description;
+      document.querySelector('meta[name="twitter:title"]').content = meta.title;
+      document.querySelector('meta[name="twitter:description"]').content = meta.description;
     }
     updateThemeButton();
   }
-  langButton.addEventListener('click', () => { language = language === 'pl' ? 'en' : 'pl'; save('portfolio-language', language); renderLanguage(); });
   themeButton.addEventListener('click', () => { const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'; document.documentElement.dataset.theme = theme; save('portfolio-theme', theme); updateThemeButton(); });
   matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => { if (!['light', 'dark'].includes(read('portfolio-theme'))) { document.documentElement.dataset.theme = event.matches ? 'dark' : 'light'; updateThemeButton(); } });
   document.getElementById('cv-preview').addEventListener('click', () => { frame.src = pdf(); dialog.showModal(); });

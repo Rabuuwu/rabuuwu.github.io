@@ -1,15 +1,16 @@
 """Real-browser checks. Start a local HTTP server, then run this script."""
 import os
+import tempfile
 from pathlib import Path
 from playwright.sync_api import sync_playwright, expect
 
 BASE = os.environ.get('PORTFOLIO_URL', 'http://127.0.0.1:8765').rstrip('/')
-CHROME = os.environ.get('CHROME_PATH', '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome')
-SHOTS = Path(__file__).parent / 'screenshots'
-SHOTS.mkdir(exist_ok=True)
+CHROME = os.environ.get('CHROME_PATH')
+SHOTS = Path(os.environ.get('PORTFOLIO_ARTIFACT_DIR', str(Path(tempfile.gettempdir()) / 'portfolio-browser-artifacts')))
+SHOTS.mkdir(parents=True, exist_ok=True)
 
 with sync_playwright() as p:
-    browser = p.chromium.launch(executable_path=CHROME, headless=True)
+    browser = p.chromium.launch(executable_path=CHROME or None, headless=True)
     cases = [('pl-PL','light',1440),('en-US','dark',1440),('pl-PL','dark',390),('en-US','light',320),('pl-PL','light',320),('de-DE','light',768)]
     for locale, theme, width in cases:
         context = browser.new_context(locale=locale, color_scheme=theme, viewport={'width':width,'height':950}, reduced_motion='reduce')
@@ -18,9 +19,10 @@ with sync_playwright() as p:
         failed = []
         page.on('pageerror', lambda err: errors.append(str(err)))
         page.on('response', lambda response: failed.append(f'{response.status} {response.url}') if response.status >= 400 else None)
-        page.goto(BASE, wait_until='networkidle')
-        page.evaluate('document.fonts.ready')
         language = 'pl' if locale.startswith('pl') else 'en'
+        home_url = f'{BASE}/pl/' if language == 'pl' else BASE
+        page.goto(home_url, wait_until='networkidle')
+        page.evaluate('document.fonts.ready')
         expect(page.locator('html')).to_have_attribute('lang', language)
         expect(page.locator('html')).to_have_attribute('data-theme', theme)
         expect(page.locator('h1')).to_contain_text('Adam Bielas')
@@ -59,7 +61,7 @@ with sync_playwright() as p:
     context = browser.new_context(locale='pl-PL', color_scheme='light')
     page = context.new_page()
     page.add_init_script('Object.defineProperty(window, "localStorage", {get(){throw new Error("storage unavailable")}})')
-    page.goto(BASE, wait_until='networkidle')
+    page.goto(f'{BASE}/pl/', wait_until='networkidle')
     page.locator('#language').click()
     expect(page.locator('html')).to_have_attribute('lang','en')
     page.locator('#theme').click()

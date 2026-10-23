@@ -3,6 +3,7 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  pull_request:
 permissions:
   contents: read
 concurrency:
@@ -20,8 +21,10 @@ jobs:
         run: python -m pip install -r tests/requirements.txt
       - name: Check generated pages
         run: |
+          python -m unittest discover -s tests -p 'test_*.py' -v
+          python scripts/check_test_sensitivity.py
           python scripts/build_portfolio.py
-          git diff --exit-code -- index.html projects
+          git diff --exit-code -- index.html projects pl sitemap.xml
       - name: Check portfolio in Chrome
         env:
           CHROME_PATH: /usr/bin/google-chrome
@@ -35,16 +38,19 @@ jobs:
           done
           python tests/browser_check.py
           python tests/case_studies_check.py
+          python tests/accessibility_check.py
       - name: Package public files
         run: |
           mkdir -p /tmp/portfolio-site
-          cp index.html style.css app.js .nojekyll /tmp/portfolio-site/
+          cp index.html robots.txt sitemap.xml style.css app.js .nojekyll /tmp/portfolio-site/
           cp -R assets /tmp/portfolio-site/assets
           cp -R projects /tmp/portfolio-site/projects
+          cp -R pl /tmp/portfolio-site/pl
       - uses: actions/upload-pages-artifact@v3
         with:
           path: /tmp/portfolio-site
   deploy:
+    if: github.event_name != 'pull_request'
     needs: verify
     runs-on: ubuntu-latest
     permissions:
