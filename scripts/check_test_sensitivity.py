@@ -25,9 +25,9 @@ def main():
     outcomes = []
     with tempfile.TemporaryDirectory(prefix='portfolio-regression-') as directory:
         root = Path(directory)
-        for name in ('assets', 'content', 'templates', 'scripts', 'tests', 'projects'):
+        for name in ('assets', 'content', 'templates', 'scripts', 'tests', 'projects', 'pl'):
             shutil.copytree(ROOT / name, root / name, ignore=shutil.ignore_patterns('__pycache__'))
-        for name in ('index.html', 'app.js', 'style.css'):
+        for name in ('index.html', 'app.js', 'style.css', 'robots.txt', 'sitemap.xml'):
             shutil.copy2(ROOT / name, root / name)
         baseline = run(root)
         if baseline.returncode:
