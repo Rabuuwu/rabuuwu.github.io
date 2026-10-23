@@ -7,7 +7,7 @@ from playwright.sync_api import sync_playwright, expect
 BASE = os.environ.get('PORTFOLIO_URL', 'http://127.0.0.1:8765').rstrip('/')
 CHROME = os.environ.get('CHROME_PATH')
 ROOT = Path(__file__).resolve().parents[1]
-ROUTES = ['/', *[f'/projects/{p.parent.name}/' for p in sorted((ROOT / 'projects').glob('*/index.html'))]]
+EN_ROUTES = ['/', *[f'/projects/{p.parent.name}/' for p in sorted((ROOT / 'projects').glob('*/index.html'))]]
 
 with sync_playwright() as p:
     browser = p.chromium.launch(executable_path=CHROME or None, headless=True)
@@ -22,7 +22,9 @@ with sync_playwright() as p:
                         page = context.new_page()
                         errors = []
                         page.on('pageerror', lambda error: errors.append(str(error)))
-                        for route in ROUTES:
+                        routes = ([f'/pl{route}' if route == '/' else f'/pl{route}' for route in EN_ROUTES]
+                                  if locale == 'pl-PL' else EN_ROUTES)
+                        for route in routes:
                             response = page.goto(BASE + route, wait_until='networkidle')
                             assert response and response.ok, (route, 'HTTP response')
                             expect(page.locator('html')).to_have_attribute('lang', locale[:2])
@@ -43,7 +45,7 @@ with sync_playwright() as p:
                             expect(page.locator('.skip')).to_be_focused()
                             page.keyboard.press('Enter')
                             assert page.url.endswith('#main'), route
-                            if route == '/':
+                            if route in ('/', '/pl/'):
                                 for anchor in ('engineering', 'aiAutomation'):
                                     expect(page.locator(f'#{anchor} h2')).to_be_visible()
                                     assert page.locator(f'#{anchor} .engineering-item').count() >= 2
