@@ -42,7 +42,7 @@ jobs:
       - name: Package public files
         run: |
           mkdir -p /tmp/portfolio-site
-          cp index.html robots.txt sitemap.xml style.css app.js .nojekyll /tmp/portfolio-site/
+          cp index.html robots.txt sitemap.xml style.css app.js .nojekyll google3c644c4f1264c9f9.html /tmp/portfolio-site/
           cp -R assets /tmp/portfolio-site/assets
           cp -R projects /tmp/portfolio-site/projects
           cp -R pl /tmp/portfolio-site/pl
