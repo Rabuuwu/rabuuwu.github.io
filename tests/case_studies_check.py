@@ -1,23 +1,26 @@
 """Browser regressions for the expanded portfolio and its case study journeys."""
 import os
+import tempfile
 from pathlib import Path
 from playwright.sync_api import sync_playwright, expect
 
 BASE = os.environ.get('PORTFOLIO_URL', 'http://127.0.0.1:8765').rstrip('/')
-CHROME = os.environ.get('CHROME_PATH', '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome')
+CHROME = os.environ.get('CHROME_PATH')
 SLUGS = ['crm-inventory', 'ai-call-summaries', 'ksef', 'customer-app', 'dnd-companion', 'trading-helper']
-SHOTS = Path(__file__).parent / 'screenshots'
-SHOTS.mkdir(exist_ok=True)
+SHOTS = Path(os.environ.get('PORTFOLIO_ARTIFACT_DIR', str(Path(tempfile.gettempdir()) / 'portfolio-browser-artifacts')))
+SHOTS.mkdir(parents=True, exist_ok=True)
 
 with sync_playwright() as p:
-    browser = p.chromium.launch(executable_path=CHROME, headless=True)
+    browser = p.chromium.launch(executable_path=CHROME or None, headless=True)
     for locale, theme, width in [('en-US', 'light', 1440), ('pl-PL', 'dark', 390)]:
         context = browser.new_context(locale=locale, color_scheme=theme, viewport={'width': width, 'height': 900}, reduced_motion='reduce')
         page = context.new_page()
         errors, missing = [], []
         page.on('pageerror', lambda err: errors.append(str(err)))
         page.on('response', lambda r: missing.append(f'{r.status} {r.url}') if r.status >= 400 else None)
-        page.goto(BASE, wait_until='networkidle')
+        language = 'pl' if locale.startswith('pl') else 'en'
+        home_url = f'{BASE}/pl/' if language == 'pl' else BASE
+        page.goto(home_url, wait_until='networkidle')
         expect(page.locator('a[data-case-link]')).to_have_count(6)
         for anchor in ['experience', 'competencies', 'approach']:
             assert page.locator(f'#{anchor}').count() == 1
@@ -31,14 +34,16 @@ with sync_playwright() as p:
             expect(page.locator('#menu-toggle')).to_be_focused()
         for slug in SLUGS:
             page.set_viewport_size({'width': width, 'height': 900})
-            response = page.goto(f'{BASE}/projects/{slug}/', wait_until='networkidle')
+            case_url = f'{BASE}/pl/projects/{slug}/' if language == 'pl' else f'{BASE}/projects/{slug}/'
+            response = page.goto(case_url, wait_until='networkidle')
             assert response.status == 200
             expect(page.locator('html')).to_have_attribute('lang', 'pl' if locale.startswith('pl') else 'en')
             expect(page.locator('html')).to_have_attribute('data-theme', theme)
             assert page.locator('h1').count() == 1
             assert page.locator('.case-section').count() >= 5
-            assert page.locator('link[rel=canonical]').get_attribute('href') == f'https://rabuuwu.github.io/projects/{slug}/'
-            assert page.locator('meta[property="og:url"]').get_attribute('content').endswith(f'/projects/{slug}/')
+            localized_path = f'/pl/projects/{slug}/' if language == 'pl' else f'/projects/{slug}/'
+            assert page.locator('link[rel=canonical]').get_attribute('href') == f'https://rabuuwu.github.io{localized_path}'
+            assert page.locator('meta[property="og:url"]').get_attribute('content').endswith(localized_path)
             assert page.locator('meta[property="og:title"]').get_attribute('content')
             assert page.locator('meta[property="og:description"]').get_attribute('content')
             assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), (slug, width)
@@ -52,6 +57,7 @@ with sync_playwright() as p:
             page.locator('#language').click()
             assert page.locator('h1').inner_text() != initial_title
             assert page.locator('meta[name="description"]').get_attribute('content') != initial_meta
+            expect(page.locator('html')).to_have_attribute('lang', 'en' if language == 'pl' else 'pl')
             assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), (slug, '320px switched language')
             page.set_viewport_size({'width': width, 'height': 900})
             other = 'en' if locale.startswith('pl') else 'pl'

@@ -17,28 +17,28 @@
       "pl": "W opisach pokazuję problem, mój zakres odpowiedzialności i aktualny status rozwiązania."
     },
     "inventoryMetric": {
-      "en": "estimated time reduction",
-      "pl": "szacunkowo krótszy czas"
+      "en": "connected inventory workflow",
+      "pl": "połączony obieg magazynowy"
     },
     "inventoryTitle": {
       "en": "I replaced a paper inventory workflow.",
       "pl": "Zastąpiłem papierowy obieg magazynowy."
     },
     "inventoryBody": {
-      "en": "I built the SQL data model, device history, customer address links and document generation. The ~90% improvement is an estimate from comparing average task times.",
-      "pl": "Zbudowałem model SQL, historię urządzeń, powiązania z adresami klientów i generowanie dokumentów. Wynik ~90% to szacunek z porównania średnich czasów zadań."
+      "en": "I built the SQL data model, device history, customer address links and document generation. The module replaced a paper workflow.",
+      "pl": "Zbudowałem model SQL, historię urządzeń, powiązania z adresami klientów i generowanie dokumentów. Moduł zastąpił papierowy obieg."
     },
     "aiTitle": {
       "en": "I integrated local AI with the CRM.",
       "pl": "Zintegrowałem lokalne AI z CRM."
     },
     "aiBody": {
-      "en": "I handled access to recordings, used faster-whisper for transcription, built the API, fine-tuned the local model and displayed summaries in the CRM. The time comparison is an estimate.",
-      "pl": "Odpowiadałem za dostęp do nagrań, wykorzystałem faster-whisper, zbudowałem API, dostroiłem lokalny model i wyświetlanie podsumowań w CRM. Porównanie czasów jest szacunkiem."
+      "en": "I connected recording access, faster-whisper transcription, a local language model and authenticated API endpoints with summaries displayed in the CRM.",
+      "pl": "Połączyłem dostęp do nagrań, transkrypcję faster-whisper, lokalny model językowy i uwierzytelniane API z wyświetlaniem podsumowań w CRM."
     },
     "localModel": {
-      "en": "Estimated values based on a comparison of average times",
-      "pl": "Wartości szacunkowe na podstawie porównania średnich czasów"
+      "en": "Local model connected through an authenticated API",
+      "pl": "Lokalny model połączony przez uwierzytelniane API"
     },
     "dndBody": {
       "en": "I started with the paper character sheets and notebooks we used during RPG sessions. The app brings characters, equipment, notes and campaigns together.",
@@ -73,8 +73,8 @@
       "pl": "Przed objęciem stanowiska programisty w 2025 r. pracowałem jako monter, już wtedy wykonując zadania programistyczne. To doświadczenie pomaga mi łączyć aplikację z urządzeniami, adresami klientów i codzienną pracą operatora ISP."
     },
     "contactIntro": {
-      "en": "A development task, integration or website?",
-      "pl": "Aplikacja, integracja lub strona internetowa?"
+      "en": "Fullstack, Node.js backend or AI application development?",
+      "pl": "Fullstack, backend Node.js lub rozwój aplikacji AI?"
     },
     "contactTitle": {
       "en": "Let's discuss<br>working together.",
@@ -149,16 +149,20 @@
       "pl": "Inny eksperyment: FSE-IT"
     },
     "fsBody": {
-      "en": "An educational-content system with article and course creation, resource management, an Express API and PostgreSQL. I present it as an experiment; the planned ML and automated-test features are not implemented.",
-      "pl": "System treści edukacyjnych z tworzeniem artykułów i kursów, zarządzaniem zasobami, API Express i PostgreSQL. Pokazuję go jako eksperyment; planowane ML i automatyczne testy nie są zaimplementowane."
+      "en": "An educational-content experiment with an Express API, PostgreSQL and a Python ML service. It has automated tests; full integration verification requires separate services.",
+      "pl": "Eksperymentalny system treści edukacyjnych z API Express, PostgreSQL i usługą ML w Pythonie. Posiada testy automatyczne; pełna weryfikacja integracyjna wymaga osobnych usług."
     },
     "callDocumentation": {
       "en": "Call documentation time",
       "pl": "Czas dokumentowania rozmowy"
     },
     "callSeconds": {
-      "en": "~15 s",
-      "pl": "~15 s"
+      "en": "CRM",
+      "pl": "CRM"
+    },
+    "experienceShort": {
+      "en": "Around 3 years in IT; Software Developer role since 2025.",
+      "pl": "Około 3 lata w IT; stanowisko programisty od 2025 r."
     }
   },
   "cases": [
@@ -266,8 +270,8 @@
           },
           "paragraphs": [
             {
-              "en": "I estimate that inventory work takes about 90% less time than the previous paper workflow. This is based on a comparison of average task times; it is an estimate, not a controlled benchmark.",
-              "pl": "Szacuję, że praca związana z inwentaryzacją zajmuje około 90% mniej czasu niż przy wcześniejszym obiegu papierowym. Wynik opiera się na porównaniu średnich czasów zadań; jest szacunkiem, nie kontrolowanym benchmarkiem."
+              "en": "The workflow is integrated with the CRM. No reproducible before/after measurements are available in this repository, so I do not present a numerical performance result.",
+              "pl": "Proces jest zintegrowany z CRM. W repozytorium nie ma odtwarzalnych pomiarów przed i po zmianie, dlatego nie przedstawiam liczbowego wyniku wydajności."
             }
           ],
           "bullets": []
@@ -417,8 +421,8 @@
           },
           "paragraphs": [
             {
-              "en": "I estimate that call documentation went from about 3 minutes to about 15 seconds. I derived the estimate by comparing average times. This is an approximate comparison, not a controlled benchmark.",
-              "pl": "Szacuję, że czas dokumentowania rozmowy skrócił się z około 3 minut do około 15 sekund. Oszacowanie wynika z porównania średnich czasów. To przybliżone porównanie, nie kontrolowany benchmark."
+              "en": "The workflow is integrated with the CRM. No reproducible before/after measurements are available in this repository, so I do not present a numerical performance result.",
+              "pl": "Proces jest zintegrowany z CRM. W repozytorium nie ma odtwarzalnych pomiarów przed i po zmianie, dlatego nie przedstawiam liczbowego wyniku wydajności."
             }
           ],
           "bullets": []
@@ -1280,6 +1284,70 @@
       {
         "en": "I maintain the production CRM, diagnose problems and provide first-line user support.",
         "pl": "Utrzymuję produkcyjny CRM, diagnozuję problemy i zapewniam użytkownikom pierwszą linię wsparcia."
+      }
+    ]
+  ],
+  "engineering": [
+    [
+      {
+        "en": "Tests and regressions",
+        "pl": "Testy i regresje"
+      },
+      {
+        "en": "The source repositories contain automated tests. Audit changes are labelled separately from my professional experience; local test execution does not certify production readiness.",
+        "pl": "Repozytoria zawierają testy automatyczne. Zmiany audytowe oddzielam od doświadczenia zawodowego; lokalne testy nie stanowią certyfikacji gotowości produkcyjnej."
+      }
+    ],
+    [
+      {
+        "en": "Architecture and data",
+        "pl": "Architektura i dane"
+      },
+      {
+        "en": "I explain module boundaries, data ownership and deployment constraints in project documentation. Database integration needs an isolated test database.",
+        "pl": "W dokumentacji projektów opisuję granice modułów, własność danych i ograniczenia wdrożenia. Integracja z bazą wymaga izolowanej bazy testowej."
+      }
+    ],
+    [
+      {
+        "en": "Security and delivery",
+        "pl": "Bezpieczeństwo i dostarczanie"
+      },
+      {
+        "en": "The engineering audit reviews validation, access control and CI checks. Open risks and checks blocked by the environment remain explicit.",
+        "pl": "Audyt inżynierski obejmuje walidację, kontrolę dostępu i kontrole CI. Otwarte ryzyka oraz kontrole zablokowane przez środowisko pozostają jawne."
+      }
+    ],
+    [
+      {
+        "en": "Monitoring and performance",
+        "pl": "Monitoring i wydajność"
+      },
+      {
+        "en": "Maintaining CRM systems includes diagnosing incidents and supporting users. I publish performance improvements only with reproducible measurements.",
+        "pl": "Utrzymanie CRM obejmuje diagnozowanie incydentów i wsparcie użytkowników. Poprawę wydajności publikuję wyłącznie wraz z odtwarzalnymi pomiarami."
+      }
+    ]
+  ],
+  "aiAutomation": [
+    [
+      {
+        "en": "Local AI in a business workflow",
+        "pl": "Lokalne AI w procesie biznesowym"
+      },
+      {
+        "en": "Call recordings → faster-whisper → local LLM → authenticated JSON API → CRM summary. This is my declared commercial integration experience; employer code and recordings remain private.",
+        "pl": "Nagrania → faster-whisper → lokalny LLM → uwierzytelniane API JSON → podsumowanie w CRM. To deklarowane doświadczenie komercyjne; kod pracodawcy i nagrania pozostają prywatne."
+      }
+    ],
+    [
+      {
+        "en": "Offer preparation — in development",
+        "pl": "Przygotowywanie ofert — w rozwoju"
+      },
+      {
+        "en": "I am developing AI assistance for preparing offers for individual customers. I do not claim a completed deployment or measured business results.",
+        "pl": "Rozwijam wsparcie AI do przygotowywania ofert dla klientów indywidualnych. Nie deklaruję ukończonego wdrożenia ani zmierzonych wyników biznesowych."
       }
     ]
   ]
